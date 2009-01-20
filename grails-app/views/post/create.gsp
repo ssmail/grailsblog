@@ -51,6 +51,15 @@
 
                                 <tr class="prop">
                                     <td valign="top" class="name">
+                                        <label for="category">Category:</label>
+                                    </td>
+                                    <td valign="top" class="value ${hasErrors(bean: postInstance, field: 'category', 'errors')}">
+                                        <g:select optionKey="id" from="${PostCategory.list()}" name="category.id" value="${postInstance?.category?.id}"></g:select>
+                                    </td>
+                                </tr>
+
+                                <tr class="prop">
+                                    <td valign="top" class="name">
                                         <label for="title">Title:</label>
                                     </td>
                                     <td valign="top" class="value ${hasErrors(bean: postInstance, field: 'title', 'errors')}">
