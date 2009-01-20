@@ -1,5 +1,10 @@
 class Post implements Comparable {
 
+    static searchable = {
+        content spellCheck: "include"
+        title spellCheck: "include"
+    }
+
     String title
     String content = ""
     String teaser = ""
@@ -9,7 +14,7 @@ class Post implements Comparable {
     SortedSet comments
     PostCategory category
 
-    static hasMany = [comments : PostedComment]
+    static hasMany = [comments: PostedComment]
     static belongsTo = [author: Author]
 
     static mapping = {
