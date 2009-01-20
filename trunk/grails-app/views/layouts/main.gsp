@@ -24,7 +24,6 @@
 <g:layoutHead/>
 </head>
 <body id="mainBody">
-    <div class="logo"><img src="${createLinkTo(dir: 'images', file: 'grails_logo.jpg')}" alt="Grails"/></div>
     <div id="page_margins">
         <div id="page">
             <div id="header">

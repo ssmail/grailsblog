@@ -298,6 +298,9 @@ label {
 }
 
 /* Post Admin */
+.almostFull {
+    width: 98%;
+}
 
 td.name {
     vertical-align: top;
