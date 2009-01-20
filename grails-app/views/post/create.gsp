@@ -63,7 +63,7 @@
                                         <label for="title">Title:</label>
                                     </td>
                                     <td valign="top" class="value ${hasErrors(bean: postInstance, field: 'title', 'errors')}">
-                                        <input type="text" id="title" name="title" value="${fieldValue(bean: postInstance, field: 'title')}"/>
+                                        <input class="almostFull" type="text" id="title" name="title" value="${fieldValue(bean: postInstance, field: 'title')}"/>
                                     </td>
                                 </tr>
 

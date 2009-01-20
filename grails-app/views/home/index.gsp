@@ -23,6 +23,11 @@
                     <div class="postContent">
                         <g:if test="${postInstance.teaser.size() > 0}">
                             ${postInstance.teaser}
+                            <div class="readMore">
+                                <g:link controller="archive" action="show" id="${postInstance.id}">
+                                    <g:message code="post.read.more"/>
+                                </g:link>
+                            </div>
                         </g:if>
                         <g:else>
                             ${postInstance.content}
