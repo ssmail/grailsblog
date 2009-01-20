@@ -10,13 +10,13 @@
         url="[ controller: 'archive', action: 'saveComment']"
         update="[success: 'postedComments', failure: 'postedComments']">
     <div><g:message code="comment.form.title"/>*</div>
-    <input class="commentFormInput" type="text" name="title" value="${postedComment?.title}"/>
+    <g:textField class="commentFormInput" name="title" value="${postedComment?.title}" />
 
     <div><g:message code="comment.form.name"/>*</div>
-    <input class="commentFormInput" type="text" name="anonymousName" value="${postedComment?.anonymousName}"/>
+    <g:textField class="commentFormInput" name="anonymousName" value="${postedComment?.anonymousName}" />
 
     <div><g:message code="comment.form.content"/>*</div>
-    <textarea class="commentFormTextArea" name="content">${postedComment?.content}</textarea>
+    <g:textArea class="commentFormTextArea" name="content" value="${postedComment?.content}"/>
 
     <recaptcha:ifEnabled>
         <recaptcha:recaptcha theme="clean"/>
