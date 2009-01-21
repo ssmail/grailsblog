@@ -33,7 +33,16 @@
                     <a class="skip" href="#navigation" title="skip link">Skip to the navigation</a><span class="hideme">.</span>
                     <a class="skip" href="#content" title="skip link">Skip to the content</a><span class="hideme">.</span>
                     <!-- end: skip link navigation -->
-                    <span><jsec:isNotLoggedIn><g:link controller="auth">Login</g:link></jsec:isNotLoggedIn><jsec:isLoggedIn>Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</jsec:isLoggedIn> | <a href="#">Contact</a> | <a href="#">Imprint</a></span>
+                    <span>
+                        <jsec:isNotLoggedIn>
+                            <g:link controller="auth">Login</g:link>
+                        </jsec:isNotLoggedIn>
+                        <jsec:isLoggedIn>
+                            Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)
+                        </jsec:isLoggedIn> |
+                        <a href="#">Contact</a> |
+                        <g:render template="/shared/searchBoxTemplate"/>
+                    </span>
                 </div>
 
                 <h1><g:message code="blog.title"/> | Simple Project Example</h1>
@@ -41,18 +50,18 @@
             </div>
             <!-- begin: main navigation #nav -->
             <!--<<div id="nav"><a id="navigation" name="navigation"></a>-->
-                <!-- skiplink anchor: navigation -->
-                <!--<div id="nav_main">-->
+            <!-- skiplink anchor: navigation -->
+            <!--<div id="nav_main">-->
 
-                    <!--<ul>-->
-                        <!--<li id="current"><a href="#">Button 1</a></li>-->
-                        <!--<li><a href="#">Button 2</a></li>-->
-                        <!--<li><a href="#">Button 3</a></li>-->
-                        <!--<li><a href="#">Button 4</a></li>-->
-                        <!--<li><a href="#">Button 5</a></li>-->
+            <!--<ul>-->
+            <!--<li id="current"><a href="#">Button 1</a></li>-->
+            <!--<li><a href="#">Button 2</a></li>-->
+            <!--<li><a href="#">Button 3</a></li>-->
+            <!--<li><a href="#">Button 4</a></li>-->
+            <!--<li><a href="#">Button 5</a></li>-->
 
-                    <!--</ul>-->
-                <!--</div>-->
+            <!--</ul>-->
+            <!--</div>-->
             <!--</div>-->
             <!-- end: main navigation -->
             <!-- begin: main content area #main -->
