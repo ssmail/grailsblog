@@ -13,8 +13,14 @@
             <g:each in="${posts}" status="i" var="postInstance">
                 <div>
                     <div class="postTitle">
-                        <h2><a href="<g:createLink controller="archive" action="show" id="${postInstance.id}"/>">
-                            ${postInstance.title.encodeAsHTML()}</a>
+                        <h2>
+                            <a href="<g:createLink
+                                    controller="archive"
+                                    action="show"
+                                    id="${postInstance.id}"/>"
+                                    alt="<g:message code="blog.permalink"/>"
+                                    title="<g:message code="blog.permalink"/>">
+                                ${postInstance.title.encodeAsHTML()}</a>
                         </h2>
                     </div>
                     <div class="byLine">
