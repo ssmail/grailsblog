@@ -99,7 +99,7 @@ class PostController {
             render(view: 'create', model: [postInstance: postInstance])
         }
     }
-      // TODO Move to Service
+    // TODO Move to Service
     def updateTeaser(postInstance) {
 
         if (StringUtils.contains(params.content, readMore)) {
