@@ -1,6 +1,7 @@
 class Post implements Comparable {
 
     static searchable = {
+        only: ['content', 'title']
         content spellCheck: "include"
         title spellCheck: "include"
     }

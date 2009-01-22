@@ -34,14 +34,14 @@
                     <a class="skip" href="#content" title="skip link">Skip to the content</a><span class="hideme">.</span>
                     <!-- end: skip link navigation -->
                     <span>
+                        <g:render template="/shared/searchBoxTemplate"/>
                         <jsec:isNotLoggedIn>
                             <g:link controller="auth">Login</g:link>
                         </jsec:isNotLoggedIn>
                         <jsec:isLoggedIn>
                             Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)
                         </jsec:isLoggedIn> |
-                        <a href="#">Contact</a> |
-                        <g:render template="/shared/searchBoxTemplate"/>
+                        <a href="#">Contact</a>
                     </span>
                 </div>
 
