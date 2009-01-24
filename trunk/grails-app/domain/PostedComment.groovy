@@ -9,7 +9,7 @@ class PostedComment implements Comparable{
     static belongsTo = [commenter : Commenter, post : Post]
 
     static constraints = {
-        title(blanke: false, size: 1..100)
+        title(blank: false, size: 1..100)
         content(blank: false, size: 1..250)
         commenter(nullable:true)
         anonymousName(blank: false, size: 1..100)
