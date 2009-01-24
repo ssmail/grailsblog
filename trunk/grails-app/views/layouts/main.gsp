@@ -40,8 +40,7 @@
                         </jsec:isNotLoggedIn>
                         <jsec:isLoggedIn>
                             Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)
-                        </jsec:isLoggedIn> |
-                        <a href="#">Contact</a>
+                        </jsec:isLoggedIn>
                     </span>
                 </div>
 
