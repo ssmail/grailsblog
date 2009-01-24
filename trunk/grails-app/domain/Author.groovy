@@ -11,6 +11,8 @@ class Author extends Commenter {
 
     static mapping = {
         about type: "text"
+        cache true
+        posts cache: 'nonstrict-read-write'
     }
 
     String toString() {

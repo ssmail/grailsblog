@@ -21,6 +21,10 @@ class Post implements Comparable {
     static mapping = {
         content type: "text"
         teaser type: "text"
+        cache true
+        comments cache: 'nonstrict-read-write'
+        author cache: 'nonstrict-read-write'
+        category cache: 'nonstrict-read-write'
     }
 
     /**
