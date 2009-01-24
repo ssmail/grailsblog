@@ -44,7 +44,8 @@
                     </span>
                 </div>
 
-                <h1 class="siteTitle"><g:link controller="home" action="index"><g:message code="blog.title"/> | Simple Project Example</g:link></h1>
+                <% homeText = message(code:"home", args:[]) %>
+                <h1 class="siteTitle"><g:link controller="home" action="index" title="${homeText}"><g:message code="blog.title"/> | Simple Project Example</g:link></h1>
                 <span><g:message code="blog.subtitle"/></span>
             </div>
             <!-- begin: main navigation #nav -->
