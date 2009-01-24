@@ -1,7 +1,6 @@
-<g:formRemote url='[controller: "search", action: "index"]'
+<g:form url='[controller: "search", action: "index"]'
         id="searchableForm"
         name="searchableForm"
-        update="col3_content"
-        method="post">
+        method="get">
     <g:textField name="q" value="${params.q}"/>
-</g:formRemote>
+</g:form>
