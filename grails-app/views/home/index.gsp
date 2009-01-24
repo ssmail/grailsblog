@@ -2,7 +2,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main"/>
-        <title><g:message code="blog.title"/></title>
+        <title><g:message code="blog.title"/> - <g:message code="home"/></title>
         <feed:meta kind="rss" version="2.0" controller="feed" action="rss"/>
     </head>
     <body>
