@@ -19,16 +19,16 @@
                 </span>
             </h2>
             <g:if test="${results}">
-                <h3>
-                    <div id="postResults" class="resultsPane">
-                        <g:each in="${results}" var="post">
+                <div id="postResults" class="resultsPane">
+                    <g:each in="${results}" var="post">
+                        <h3>
                             <g:link controller="archive" action="show" id="${post.id}">
                                 ${post.title.encodeAsHTML()}
                             </g:link>
-                            ${post?.teaser}
-                        </g:each>
-                    </div>
-                </h3>
+                        </h3>
+                        ${post?.teaser}
+                    </g:each>
+                </div>
             </g:if>
             <g:if test="${!results || results.size() == 0}">
                 <p>Nothing matched your query -

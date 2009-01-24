@@ -40,7 +40,9 @@
                         </g:else>
                     </div>
                 </div>
-                <div class="dots"></div>
+                <g:if test="${i < posts.size() - 1}">
+                    <div class="dots"></div>
+                </g:if>
             </g:each>
         </div>
     </body>
