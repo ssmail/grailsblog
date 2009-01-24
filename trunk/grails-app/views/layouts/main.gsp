@@ -44,7 +44,7 @@
                     </span>
                 </div>
 
-                <h1><g:message code="blog.title"/> | Simple Project Example</h1>
+                <h1 class="siteTitle"><g:link controller="home" action="index"><g:message code="blog.title"/> | Simple Project Example</g:link></h1>
                 <span><g:message code="blog.subtitle"/></span>
             </div>
             <!-- begin: main navigation #nav -->
