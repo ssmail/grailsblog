@@ -1,10 +1,26 @@
 class UrlMappings {
+
     static mappings = {
-      "/$controller/$action?/$id?"{
-	      constraints {
-			 // apply constraints here
-		  }
-	  }
-	  "500"(view:'/error')
-	}
+        // archive/show/1
+        //  home/index
+        //  search/index
+
+        // User access
+        // None yet, this will be used later for registered users
+
+        // Anonymous browsing
+        "/"(controller: "home", action: "index")
+        "/arhive/show"(controller: "archive", action: "show")
+        "/arhive/saveComment"(controller: "archive", action: "saveComment")
+
+        "/home/index"(controller: "home", action: "index")
+
+        "/search/index"(controller: "search", action: "index")
+
+        // Admin access
+        "/admin/$controller/$action?/$id?"()
+
+        // Error handling
+        "500"(view: '/error')
+    }
 }
