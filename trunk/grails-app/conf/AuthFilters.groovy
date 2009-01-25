@@ -10,10 +10,18 @@ public class AuthFilters {
             }
         }
 
+        adminHome(uri: "/admin") {
+            before = {
+                accessControl {
+                    role("SuperAdmin") | role("Admin") | role("Author")
+                }
+            }
+        }
+
         authorAdmin(controller: "author") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin")
+                    role("SuperAdmin") | role("Admin") | role("Author")
                 }
             }
         }
