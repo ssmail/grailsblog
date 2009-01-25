@@ -12,6 +12,11 @@
     <body>
         <div class="nav">
             <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}">Home</a></span>
+            <span class="menuButton">
+                <a class="home" href="<g:createLink controller='admin' action='index'/>">
+                    Admin Home
+                </a>
+            </span>
             <span class="menuButton"><g:link class="create" action="create">New Post</g:link></span>
         </div>
         <div class="body">

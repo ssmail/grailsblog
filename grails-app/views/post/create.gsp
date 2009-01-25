@@ -14,6 +14,11 @@
         <div id="postCreate" style="display: none">
             <div id="pop" class="nav">
                 <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}">Home</a></span>
+                <span class="menuButton">
+                    <a class="home" href="<g:createLink controller='admin' action='index'/>">
+                        Admin Home
+                    </a>
+                </span>
                 <span class="menuButton"><g:link class="list" action="list">Post List</g:link></span>
             </div>
             <div class="body">
