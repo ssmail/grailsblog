@@ -1,5 +1,5 @@
 class AuthorController {
     
-    def scaffold = true
+    def scaffold = Author
     
 }

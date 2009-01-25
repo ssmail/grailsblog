@@ -18,6 +18,7 @@ class UrlMappings {
         "/search/index"(controller: "search", action: "index")
 
         // Admin access
+        "/admin"(controller: "admin", action: "index")
         "/admin/$controller/$action?/$id?"()
 
         // Error handling
