@@ -36,7 +36,7 @@
                     <span>
                         <g:render template="/shared/searchBoxTemplate"/>
                         <jsec:isNotLoggedIn>
-                            <g:link controller="auth">Login</g:link>
+                            <g:message code="search" />
                         </jsec:isNotLoggedIn>
                         <jsec:isLoggedIn>
                             Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)

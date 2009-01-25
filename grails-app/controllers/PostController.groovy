@@ -4,6 +4,8 @@ class PostController {
 
     def securityService
 
+    def postService
+
     def readMore = "<!--READMORE-->"
 
     def scaffold = true
@@ -27,7 +29,7 @@ class PostController {
             flash.message = "Post not found with id ${params.id}"
             redirect(action: list)
         }
-        else { return [postInstance: postInstance] }
+        else { return [postInstance: postInstance, recentPosts: postService.getRecentPosts()] }
     }
 
     def delete = {
@@ -51,7 +53,7 @@ class PostController {
             redirect(action: list)
         }
         else {
-            return [postInstance: postInstance]
+            return [postInstance: postInstance, recentPosts: postService.getRecentPosts()]
         }
     }
 
@@ -66,7 +68,7 @@ class PostController {
                 redirect(action: show, id: postInstance.id)
             }
             else {
-                render(view: 'edit', model: [postInstance: postInstance])
+                render(view: 'edit', model: [postInstance: postInstance, recentPosts: postService.getRecentPosts()])
             }
         }
         else {
@@ -82,7 +84,7 @@ class PostController {
         def postInstance = new Post()
 
         postInstance.properties = params
-        return ['postInstance': postInstance, author: currentUser]
+        return ['postInstance': postInstance, author: currentUser, recentPosts: postService.getRecentPosts()]
     }
 
     // Called from create page.  Saves the new post
@@ -96,7 +98,7 @@ class PostController {
             redirect(action: show, id: postInstance.id)
         }
         else {
-            render(view: 'create', model: [postInstance: postInstance])
+            render(view: 'create', model: [postInstance: postInstance, recentPosts: postService.getRecentPosts()])
         }
     }
     // TODO Move to Service
