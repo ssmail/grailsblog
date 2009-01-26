@@ -50,6 +50,14 @@ public class AuthFilters {
             }
         }
 
+        searchableAdmin(controller: "searchable") {
+            before = {
+                accessControl {
+                    role("SuperAdmin") | role("Admin")
+                }
+            }
+        }
+
         userAdmin(controller: "jsecUser") {
             before = {
                 accessControl {
