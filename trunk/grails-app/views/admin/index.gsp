@@ -8,8 +8,10 @@
         <div>
             <g:link controller="post" action="list"><g:message code="post.admin"/></g:link>
         </div>
-        <div>
-            <g:link controller="author" action="list"><g:message code="author.admin"/></g:link>
-        </div>
+        <jsec:hasAnyRole in="['SuperAdmin', 'Admin']">
+            <div>
+                <g:link controller="author" action="list"><g:message code="author.admin"/></g:link>
+            </div>
+        </jsec:hasAnyRole>
     </body>
 </html>

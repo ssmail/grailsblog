@@ -5,7 +5,7 @@ public class AuthFilters {
         admin(uri: "/admin/*") {
             before = {
                 accessControl {
-                    role("SuperAdmin")
+                    role("SuperAdmin") | role("Admin") | role("Author")
                 }
             }
         }
@@ -21,7 +21,7 @@ public class AuthFilters {
         authorAdmin(controller: "author") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin") | role("Author")
+                    role("SuperAdmin") | role("Admin")
                 }
             }
         }
