@@ -3,10 +3,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main"/>
         <title>Edit Author</title>
+        <g:javascript>
+            Rico.onLoad(function() {
+                $("mainBody").addClassName("hideboth");
+            });
+        </g:javascript>
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home"/></a></span>
             <span class="menuButton">
                 <a class="home" href="<g:createLink controller='admin' action='index'/>">
                     Admin Home
@@ -28,7 +33,7 @@
             <g:form method="post">
                 <input type="hidden" name="id" value="${authorInstance?.id}"/>
                 <div class="dialog">
-                    <table>
+                    <table class="full">
                         <tbody>
 
                             <tr class="prop">

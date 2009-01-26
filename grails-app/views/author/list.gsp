@@ -3,6 +3,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main"/>
         <title>Author List</title>
+        <g:javascript>
+            Rico.onLoad(function() {
+                $("mainBody").addClassName("hideboth");
+            });
+        </g:javascript>
     </head>
     <body>
         <div class="nav">
