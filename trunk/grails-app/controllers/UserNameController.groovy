@@ -1,5 +1,5 @@
 class UserNameController {
     
-    def scaffold = true
+    def scaffold = UserName
     
 }
