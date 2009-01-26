@@ -1,4 +1,8 @@
 class AdminController {
 
-    def index = { }
+    def postService
+
+    def index = {
+        [recentPosts: postService.getRecentPosts()]
+    }
 }
