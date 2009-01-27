@@ -18,20 +18,18 @@ class BootStrap {
     }
 
     def createDefaultUsers() {
-        // Roles
-        def superAdminRole = new JsecRole(name: "SuperAdmin").save()
-        def adminRole = new JsecRole(name: "Admin").save()
-        def authorRole = new JsecRole(name: "Author").save()
-        def registeredUserRole = new JsecRole(name: "RegisteredUser").save()
 
         // Super Admin user and role.
-        def superAdminUser = new JsecUser(username: "admin", passwordHash: new Sha1Hash("admin").toHex()).save()
-        new JsecUserRoleRel(user: superAdminUser, role: superAdminRole).save()
+        def superAdminName = new UserName(firstName: "Super", middleName: "", lastName: "Admin").save()
+        def superAdminUser = new RegisteredUser(username: "admin", passwordHash: new Sha1Hash("admin").toHex(),
+                name: superAdminName, email: "test@test.com")
+        superAdminUser.addToRoles(name: RoleName.SUPER_ADMIN)
+        superAdminUser.save()
 
         // Create an author
         def authorName = new UserName(firstName: "Grails", middleName: "", lastName: "Blog").save()
         def author = new Author(username: "author", passwordHash: new Sha1Hash("author").toHex(), name: authorName).save()
-        new JsecUserRoleRel(user: author, role: authorRole).save()
+        author.addToRoles(name: RoleName.AUTHOR)
 
     }
 
