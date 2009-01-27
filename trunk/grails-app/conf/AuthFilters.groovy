@@ -34,6 +34,14 @@ public class AuthFilters {
             }
         }
 
+        postAdmin(controller: "post", action: "create") {
+            before = {
+                accessControl {
+                    role("Author")
+                }
+            }
+        }
+
         postCategoryAdmin(controller: "postCategory") {
             before = {
                 accessControl {
