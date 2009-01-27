@@ -1,4 +1,4 @@
-class JsecUser {
+class JsecUser implements Serializable {
     String username
     String passwordHash
 

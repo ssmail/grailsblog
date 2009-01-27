@@ -1,7 +1,7 @@
 import org.jsecurity.authc.AccountException
 import org.jsecurity.authc.IncorrectCredentialsException
-import org.jsecurity.authc.UnknownAccountException
 import org.jsecurity.authc.SimpleAccount
+import org.jsecurity.authc.UnknownAccountException
 
 class JsecDbRealm {
     static authTokenClass = org.jsecurity.authc.UsernamePasswordToken
@@ -39,17 +39,11 @@ class JsecDbRealm {
     }
 
     def hasRole(principal, roleName) {
-        def criteria = JsecUserRoleRel.createCriteria()
-        def roles = criteria.list {
-            role {
-                eq('name', roleName)
-            }
-            user {
-                eq('username', principal)
-            }
+        def user = RegisteredUser.findByUsername(principal, [fetch: [roles: 'join']])
+        
+        return user.roles.any {
+            it.name == RoleName.valueOf(roleName)
         }
-
-        return roles.size() > 0
     }
 
     def hasAllRoles(principal, roles) {
@@ -84,7 +78,7 @@ class JsecDbRealm {
 
         // Try each of the permissions found and see whether any of
         // them confer the required permission.
-        def retval = permissions?.find { rel ->
+        def retval = permissions?.find {rel ->
             // Create a real permission instance from the database
             // permission.
             def perm = null
@@ -139,7 +133,7 @@ class JsecDbRealm {
         // at this stage it is not worth trying to remove them. Now,
         // create a real permission from each result and check it
         // against the required one.
-        retval = results.find { rel ->
+        retval = results.find {rel ->
             def perm = null
             def constructor = findConstructor(rel.permission.type)
             if (constructor.parameterTypes.size() == 2) {
@@ -183,7 +177,7 @@ class JsecDbRealm {
         // parameter constructor and pass in just the target.
         def preferredConstructor = null
         def fallbackConstructor = null
-        clazz.declaredConstructors.each { constructor ->
+        clazz.declaredConstructors.each {constructor ->
             def numParams = constructor.parameterTypes.size()
             if (numParams == 2) {
                 if (constructor.parameterTypes[0].equals(String) &&

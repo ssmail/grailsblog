@@ -5,7 +5,7 @@ public class AuthFilters {
         admin(uri: "/admin/*") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin") | role("Author")
+                    role("SUPER_ADMIN") | role("ADMIN") | role("AUTHOR")
                 }
             }
         }
@@ -13,7 +13,7 @@ public class AuthFilters {
         adminHome(uri: "/admin") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin") | role("Author")
+                    role("SUPER_ADMIN") | role("ADMIN") | role("AUTHOR")
                 }
             }
         }
@@ -21,7 +21,7 @@ public class AuthFilters {
         authorAdmin(controller: "author") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin")
+                    role("SUPER_ADMIN") | role("ADMIN")
                 }
             }
         }
@@ -29,7 +29,7 @@ public class AuthFilters {
         postAdmin(controller: "post") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin") | role("Author")
+                    role("SUPER_ADMIN") | role("ADMIN") | role("AUTHOR")
                 }
             }
         }
@@ -37,7 +37,7 @@ public class AuthFilters {
         postAdmin(controller: "post", action: "create") {
             before = {
                 accessControl {
-                    role("Author")
+                    role("AUTHOR")
                 }
             }
         }
@@ -45,7 +45,7 @@ public class AuthFilters {
         postCategoryAdmin(controller: "postCategory") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin")
+                    role("SUPER_ADMIN") | role("ADMIN")
                 }
             }
         }
@@ -53,7 +53,7 @@ public class AuthFilters {
         postedCommentAdmin(controller: "postComment") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin")
+                    role("SUPER_ADMIN") | role("ADMIN")
                 }
             }
         }
@@ -61,7 +61,7 @@ public class AuthFilters {
         searchableAdmin(controller: "searchable") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin")
+                    role("SUPER_ADMIN") | role("ADMIN")
                 }
             }
         }
@@ -69,7 +69,7 @@ public class AuthFilters {
         userAdmin(controller: "jsecUser") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin")
+                    role("SUPER_ADMIN") | role("ADMIN")
                 }
             }
         }
@@ -77,7 +77,7 @@ public class AuthFilters {
         userNameAdmin(controller: "userName") {
             before = {
                 accessControl {
-                    role("SuperAdmin") | role("Admin")
+                    role("SUPER_ADMIN") | role("ADMIN")
                 }
             }
         }
