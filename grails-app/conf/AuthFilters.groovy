@@ -74,6 +74,14 @@ public class AuthFilters {
             }
         }
 
+        userAdmin(controller: "registeredUser") {
+            before = {
+                accessControl {
+                    role("SUPER_ADMIN") | role("ADMIN")
+                }
+            }
+        }
+
         userNameAdmin(controller: "userName") {
             before = {
                 accessControl {
