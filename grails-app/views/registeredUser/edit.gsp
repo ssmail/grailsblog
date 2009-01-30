@@ -3,6 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main"/>
         <title>Edit RegisteredUser</title>
+        <modalbox:modalIncludes/>
         <g:javascript>
             Rico.onLoad(function() {
                 $("mainBody").addClassName("hideboth");
@@ -60,9 +61,13 @@
                             <tr>
                                 <td>&nbsp;</td>
                                 <td>
-                                    <g:link action="changePassword" id="${registeredUserInstance.id}">
-                                        <g:message code="change.password"/>
-                                    </g:link>
+                                    <modalbox:createLink
+                                            action="changePasswordModal"
+                                            id="${registeredUserInstance.id}"
+                                            title="Change Password"
+                                            width="500">
+                                        Change Password
+                                    </modalbox:createLink>
                                 </td>
                             </tr>
 
