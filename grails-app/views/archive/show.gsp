@@ -2,7 +2,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main"/>
-        <title>Grails Blog - ${postInstance.title}</title>
+        <title>${site.title} - ${postInstance.title}</title>
         <!--<g:javascript>
             Rico.loadModule('Corner');
             Rico.onLoad(function() {

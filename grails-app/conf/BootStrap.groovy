@@ -14,6 +14,7 @@ class BootStrap {
             createDefaultUsers()
             createDefaultCategory()
             createDefaultPost()
+            createDefaultSite()
         }
     }
 
@@ -47,5 +48,13 @@ class BootStrap {
                 category: category)
         author.addToPosts(post)
         author.save()
+    }
+
+    def createDefaultSite() {
+        Site site = new Site(title: "Grails Blog",
+                subtitle: "Subtitle",
+                tagLine: "Insert witty tagline here",
+                description: "Site description")
+        site.save()
     }
 } 

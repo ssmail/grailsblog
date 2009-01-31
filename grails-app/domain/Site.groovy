@@ -1,16 +1,27 @@
 class Site {
 
-    String name
+    String title
+    String subtitle
     String tagLine
     String description
     String googleAdSense
     String googleAnalytics
 
     static constraints = {
-        name(maxSize: 100)
+        title(maxSize: 100)
+        subtitle(nullable: true, maxSize: 100)
         tagLine(maxSize: 100)
         description(maxSize: 1000)
-        googleAdsense(maxSize: 1000)
-        googleAnalytics(maxSize: 1000)
+        googleAdSense(nullable: true, maxSize: 1000)
+        googleAnalytics(nullable: true, maxSize: 1000)
     }
+
+    static mapping = {
+        cache true
+    }
+
+    String toString() {
+        return "${title} | ${subtitle}"
+    }
+
 }
