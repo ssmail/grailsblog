@@ -54,7 +54,9 @@ class BootStrap {
         Site site = new Site(title: "Grails Blog",
                 subtitle: "Subtitle",
                 tagLine: "Insert witty tagline here",
-                description: "Site description")
+                description: "Site description",
+                siteUrl: "http://www.grailsblog.com",
+                feedDescription: "GrailsBlog keeps you up to date with Grails, its supporting technologies and opinions")
         site.save()
     }
 } 
