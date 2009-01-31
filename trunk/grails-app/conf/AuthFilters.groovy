@@ -90,6 +90,14 @@ public class AuthFilters {
             }
         }
 
+        siteAdmin(controller: "site") {
+            before = {
+                accessControl {
+                    role("SUPER_ADMIN")
+                }
+            }
+        }
+
     }
 
 }

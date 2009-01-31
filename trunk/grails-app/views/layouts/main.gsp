@@ -36,7 +36,7 @@
                     <span>
                         <g:render template="/shared/searchBoxTemplate"/>
                         <jsec:isNotLoggedIn>
-                            <g:message code="search" />
+                            <g:message code="search"/>
                         </jsec:isNotLoggedIn>
                         <jsec:isLoggedIn>
                             Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)
@@ -44,9 +44,9 @@
                     </span>
                 </div>
 
-                <% homeText = message(code:"home", args:[]) %>
-                <h1 class="siteTitle"><g:link controller="home" action="index" title="${homeText}"><g:message code="blog.title"/> <g:message code="blog.title2"/></g:link></h1>
-                <span><g:message code="blog.subtitle"/></span>
+                <% homeText = message(code: "home", args: []) %>
+                <h1 class="siteTitle"><g:link controller="home" action="index" title="${homeText}">${site}</g:link></h1>
+                <span>${site.tagLine}</span>
             </div>
             <!-- begin: main navigation #nav -->
             <!--<<div id="nav"><a id="navigation" name="navigation"></a>-->
