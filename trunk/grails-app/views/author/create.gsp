@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home"/></a></span>
+            <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home" default="Home"/></a></span>
             <span class="menuButton">
                 <a class="home" href="<g:createLink controller='admin' action='index'/>">
                     Admin Home
@@ -42,7 +42,7 @@
                                     <g:select optionKey="id" from="${UserName.list()}" name="name.id" value="${authorInstance?.name?.id}"></g:select>
                                      or
                                     <g:link controller="userName" action="create">
-                                        <g:message code="create.new.author.name"/>
+                                        <g:message code="create.new.author.name" default="Create new author name"/>
                                     </g:link>
                                 </td>
                             </tr>

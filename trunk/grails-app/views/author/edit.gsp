@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home"/></a></span>
+            <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home" default="Home"/></a></span>
             <span class="menuButton">
                 <a class="home" href="<g:createLink controller='admin' action='index'/>">
                     Admin Home
@@ -99,7 +99,7 @@
                                             id="${authorInstance.id}"
                                             title="Change Password"
                                             width="375">
-                                        <g:message code="change.password"/>
+                                        <g:message code="change.password" default="Change password"/>
                                     </modalbox:createLink>
                                 </td>
                             </tr>

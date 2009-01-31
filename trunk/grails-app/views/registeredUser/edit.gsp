@@ -68,7 +68,7 @@
                                             id="${registeredUserInstance.id}"
                                             title="Change Password"
                                             width="375">
-                                        <g:message code="change.password"/>
+                                        <g:message code="change.password" default="Change Password"/>
                                     </modalbox:createLink>
                                 </td>
                             </tr>

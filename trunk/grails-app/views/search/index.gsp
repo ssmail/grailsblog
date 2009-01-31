@@ -3,18 +3,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main"/>
-        <title><g:message code="blog.title"/> - <g:message code="search.results"/></title>
+        <title>${site.title} - <g:message code="search.results" default="Search Results"/></title>
     </head>
     <body>
         <div id="searchResults" class="searchResults">
             <h2>
-                <g:message code="search.results.for"/>
+                <g:message code="search.results.for" default="Search results for"/>
                 <span class="searchTerm">
                     <g:if test="${params?.q}">
                         ${params?.q.encodeAsHTML()}
                     </g:if>
                     <g:else>
-                        <g:message code="blank"/>
+                        <g:message code="blank" default="blank"/>
                     </g:else>
                 </span>
             </h2>
@@ -37,7 +37,7 @@
                             ${params?.q}
                         </g:if>
                         <g:else>
-                            <g:message code="blank"/>
+                            <g:message code="blank" default="blank"/>
                         </g:else>
                     </strong>
                 </p>

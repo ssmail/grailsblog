@@ -5,7 +5,7 @@
     <div class="commentByLine">
         by ${comment?.anonymousName.encodeAsHTML()} on
         <g:formatDate format="MMMM d, yyyy" date="${comment.dateCreated}"/>
-        <g:message code="at"/> <g:formatDate format="h:mm aaa z" date="${comment.dateCreated}"/>
+        <g:message code="at" default="at"/> <g:formatDate format="h:mm aaa z" date="${comment.dateCreated}"/>
     </div>
     <div class="commentContent">
         ${comment?.content.encodeAsHTML()}

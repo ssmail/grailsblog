@@ -13,7 +13,7 @@
     <body>
         <div id="postCreate" style="display: none">
             <div id="pop" class="nav">
-                <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home"/></a></span>
+                <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home" default="Home"/></a></span>
                 <span class="menuButton">
                     <a class="home" href="<g:createLink controller='admin' action='index'/>">
                         Admin Home

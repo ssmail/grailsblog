@@ -9,13 +9,13 @@
         id="${postInstance.id}"
         url="[ controller: 'archive', action: 'saveComment']"
         update="[success: 'postedComments', failure: 'postedComments']">
-    <div><g:message code="comment.form.title"/>*</div>
+    <div><g:message code="comment.form.title" default="Title"/>*</div>
     <g:textField class="commentFormInput" name="title" value="${postedComment?.title}" />
 
-    <div><g:message code="comment.form.name"/>*</div>
+    <div><g:message code="comment.form.name" default="Name"/>*</div>
     <g:textField class="commentFormInput" name="anonymousName" value="${postedComment?.anonymousName}" />
 
-    <div><g:message code="comment.form.content"/>*</div>
+    <div><g:message code="comment.form.content" default="Comment"/>*</div>
     <g:textArea class="commentFormTextArea" name="content" value="${postedComment?.content}"/>
 
     <recaptcha:ifEnabled>
