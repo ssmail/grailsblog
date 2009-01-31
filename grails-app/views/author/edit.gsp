@@ -3,6 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main"/>
         <title>Edit Author</title>
+        <modalbox:modalIncludes />
         <g:javascript>
             Rico.onLoad(function() {
                 $("mainBody").addClassName("hideboth");
@@ -40,8 +41,10 @@
                                 <td valign="top" class="name">
                                     <label for="name">Name:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'name', 'errors')}">
-                                    <g:select optionKey="id" from="${UserName.list()}" name="name.id" value="${authorInstance?.name?.id}"></g:select>
+                                <td>
+                                    <g:link controller="userName" action="show" id="${authorInstance.name.id}">
+                                        ${authorInstance?.name.encodeAsHTML()}
+                                    </g:link>
                                 </td>
                             </tr>
 
@@ -71,8 +74,8 @@
 
                                     <ul>
                                         <g:each var="c" in="${authorInstance?.comments?}">
-                                            <li><g:link controller="postedComment" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
-                                        </g:each>
+                                <li><g:link controller="postedComment" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+                            </g:each>
                                     </ul>
                                     <g:link controller="postedComment" params="['author.id':authorInstance?.id]" action="create">Add PostedComment</g:link>
 
@@ -87,7 +90,19 @@
                                     <input type="text" id="about" name="about" value="${fieldValue(bean: authorInstance, field: 'about')}"/>
                                 </td>
                             </tr>
-
+                            <tr class="prop">
+                                <td>&nbsp;</td>
+                                <td>
+                                    <modalbox:createLink
+                                            controller="registeredUser"
+                                            action="changePasswordModal"
+                                            id="${authorInstance.id}"
+                                            title="Change Password"
+                                            width="375">
+                                        <g:message code="change.password"/>
+                                    </modalbox:createLink>
+                                </td>
+                            </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="posts">Posts:</label>

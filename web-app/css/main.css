@@ -381,6 +381,11 @@ h4.commentTitle {
     padding: 1em;
 }
 
+/* Change password modal */
+#newPassword, #confirmPassword {
+    width: 90%;
+}
+
 /* Overrides */
 
 #col1_content, #col2_content, #col3_content {

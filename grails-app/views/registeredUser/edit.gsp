@@ -46,7 +46,9 @@
                                     <label for="name">Name:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: registeredUserInstance, field: 'name', 'errors')}">
-                                    <g:select optionKey="id" from="${UserName.list()}" name="name.id" value="${registeredUserInstance?.name?.id}"></g:select>
+                                    <g:link controller="userName" action="edit" id="${registeredUserInstance?.id}">
+                                        ${registeredUserInstance?.name?.encodeAsHTML()}
+                                    </g:link>
                                 </td>
                             </tr>
 
@@ -65,8 +67,8 @@
                                             action="changePasswordModal"
                                             id="${registeredUserInstance.id}"
                                             title="Change Password"
-                                            width="500">
-                                        Change Password
+                                            width="375">
+                                        <g:message code="change.password"/>
                                     </modalbox:createLink>
                                 </td>
                             </tr>

@@ -32,7 +32,10 @@
                         <tr class="prop">
                             <td valign="top" class="name">Name:</td>
 
-                            <td valign="top" class="value"><g:link controller="userName" action="show" id="${authorInstance?.name?.id}">${authorInstance?.name?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value">
+                                <g:link controller="userName" action="show" id="${authorInstance?.name?.id}">
+                                    ${authorInstance?.name?.encodeAsHTML()}</g:link>
+                            </td>
 
                         </tr>
 

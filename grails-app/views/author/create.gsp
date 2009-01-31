@@ -40,6 +40,10 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'name', 'errors')}">
                                     <g:select optionKey="id" from="${UserName.list()}" name="name.id" value="${authorInstance?.name?.id}"></g:select>
+                                     or
+                                    <g:link controller="userName" action="create">
+                                        <g:message code="create.new.author.name"/>
+                                    </g:link>
                                 </td>
                             </tr>
 
