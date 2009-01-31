@@ -10,6 +10,11 @@
         </g:javascript>
     </head>
     <body>
+        <jsec:hasAnyRole in="['SUPER_ADMIN']">
+            <div>
+                <g:link controller="site" action="list"><g:message code="site.admin" default="Site Admin"/></g:link>
+            </div>
+        </jsec:hasAnyRole>
         <jsec:hasAnyRole in="['SUPER_ADMIN', 'ADMIN']">
             <div>
                 <g:link controller="registeredUser" action="list"><g:message code="user.admin" default="User Admin"/></g:link>
@@ -17,6 +22,8 @@
             <div>
                 <g:link controller="author" action="list"><g:message code="author.admin" default="Author Admin"/></g:link>
             </div>
+        </jsec:hasAnyRole>
+        <jsec:hasAnyRole in="['AUTHOR', 'SUPER_ADMIN', 'ADMIN']">
         </jsec:hasAnyRole>
         <div>
             <g:link controller="post" action="list"><g:message code="post.admin" default="Post Admin"/></g:link>
