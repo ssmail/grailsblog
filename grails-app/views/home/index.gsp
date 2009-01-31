@@ -18,8 +18,8 @@
                                     controller="archive"
                                     action="show"
                                     id="${postInstance.id}"/>"
-                                    alt="<g:message code="blog.permalink"/>"
-                                    title="<g:message code="blog.permalink"/>">
+                                    alt="<g:message code="blog.permalink" default="Permalink"/>"
+                                    title="<g:message code="blog.permalink" default="Permalink"/>">
                                 ${postInstance.title.encodeAsHTML()}</a>
                         </h2>
                     </div>
@@ -31,7 +31,7 @@
                             ${postInstance.teaser}
                             <div class="readMore">
                                 <g:link controller="archive" action="show" id="${postInstance.id}">
-                                    <g:message code="post.read.more"/>
+                                    <g:message code="post.read.more" default="Read More"/>
                                 </g:link>
                             </div>
                         </g:if>

@@ -4,7 +4,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <label><g:message code="new.password"/>:</label>
+                        <label><g:message code="new.password" default="New Password"/>:</label>
                     </td>
                     <td>
                         <g:passwordField name="newPassword"/>
@@ -12,7 +12,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><g:message code="confirm.password"/>:</label>
+                        <label><g:message code="confirm.password" default="Confirm Password"/>:</label>
                     </td>
                     <td>
                         <g:passwordField name="confirmPassword"/>

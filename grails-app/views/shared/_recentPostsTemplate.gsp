@@ -1,4 +1,4 @@
-<h2><g:message code="recent.posts"/></h2>
+<h2><g:message code="recent.posts" default="Recent Posts"/></h2>
 <div id="recentPosts">
     <g:each in="${recentPosts}" var="post" status="i">
         <div class="recentPosts">
@@ -7,7 +7,7 @@
     </g:each>
     <div class="recentPostsMore">
         <g:if test="${recentPosts?.size > 10}">
-            <a href="<g:createLink controller="archive" action="list"/>"><g:message code="recent.posts.more"/></a>
+            <a href="<g:createLink controller="archive" action="list"/>"><g:message code="recent.posts.more" default="More"/></a>
         </g:if>
     </div>
 </div>
