@@ -43,7 +43,7 @@
                                         <label for="author">Author:</label>
                                     </td>
                                     <td valign="top" class="value ${hasErrors(bean: postInstance, field: 'author', 'errors')}">
-                                        <g:select optionKey="id" from="${Author.list()}" name="author.id" value="${postInstance?.author?.id}"></g:select>
+                                        ${postInstance?.author.encodeAsHTML()}
                                     </td>
                                 </tr>
 
