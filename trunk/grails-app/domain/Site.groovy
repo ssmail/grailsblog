@@ -4,6 +4,8 @@ class Site {
     String subtitle
     String tagLine
     String description
+    String siteUrl
+    String feedDescription
     String googleAdSense
     String googleAnalytics
 
@@ -12,6 +14,8 @@ class Site {
         subtitle(nullable: true, maxSize: 100)
         tagLine(maxSize: 100)
         description(maxSize: 1000)
+        siteUrl(maxSize: 150)
+        feedDescription(maxSize: 1000)
         googleAdSense(nullable: true, maxSize: 1000)
         googleAnalytics(nullable: true, maxSize: 1000)
     }

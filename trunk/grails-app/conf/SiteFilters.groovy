@@ -2,10 +2,13 @@ public class SiteFilters {
 
     static filters = {
         siteInResponse(controller: "*", action: "*") {
+            before = {
+                def sites = Site.list()
+                request.site = sites.getAt(0)
+            }
             after = {model ->
                 def sites = Site.list()
-                Site site = sites.getAt(0)
-                model?.site = site
+                model?.site = sites.getAt(0)
             }
         }
     }

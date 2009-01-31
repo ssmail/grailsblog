@@ -10,8 +10,10 @@ class UrlMappings {
 
         // Anonymous browsing
         "/"(controller: "home", action: "index")
-        "/arhive/show"(controller: "archive", action: "show")
-        "/arhive/saveComment"(controller: "archive", action: "saveComment")
+        "/archive/show"(controller: "archive", action: "show")
+        "/archive/saveComment"(controller: "archive", action: "saveComment")
+        "/feed/rss"(controller: "feed", action: "rss")
+        "/feed/atom"(controller: "feed", action: "atom")
 
         "/home/index"(controller: "home", action: "index")
 
