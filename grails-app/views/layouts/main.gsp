@@ -46,7 +46,7 @@
 
                 <% homeText = message(code: "home", args: []) %>
                 <h1 class="siteTitle"><g:link controller="home" action="index" title="${homeText}">${site}</g:link></h1>
-                <span>${site.tagLine}</span>
+                <span>${site?.tagLine}</span>
             </div>
             <!-- begin: main navigation #nav -->
             <!--<<div id="nav"><a id="navigation" name="navigation"></a>-->
@@ -69,7 +69,7 @@
                 <!-- begin: #col1 - first float column -->
                 <div id="col1">
                     <div id="col1_content" class="clearfix">
-
+                        ${site?.googleAdSense}
                     </div>
                 </div>
                 <!-- end: #col1 -->
@@ -105,6 +105,7 @@
         </div>
 
     </div>
+    ${site?.googleAnalytics}
 </body>
 
 </body>

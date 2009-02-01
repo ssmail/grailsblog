@@ -64,10 +64,37 @@
 
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="siteUrl">Site URL:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'siteUrl', 'errors')}">
+                                    <input type="text" maxlength="150" id="siteUrl" name="siteUrl" value="${fieldValue(bean: siteInstance, field: 'siteUrl')}"/>
+                                </td>
+                            </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="description">Description:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'description', 'errors')}">
                                     <textarea class="full" rows="5" name="description">${fieldValue(bean: siteInstance, field: 'description')}</textarea>
+                                </td>
+                            </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="feedDescription">Feed Description:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'feedDescription', 'errors')}">
+                                    <textarea class="full" rows="5" name="feedDescription">${fieldValue(bean: siteInstance, field: 'feedDescription')}</textarea>
+                                </td>
+                            </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="keyWords">Keywords:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'keyWords', 'errors')}">
+                                    <textarea class="full" rows="5" name="keyWords">${fieldValue(bean: siteInstance, field: 'keyWords')}</textarea>
                                 </td>
                             </tr>
 
