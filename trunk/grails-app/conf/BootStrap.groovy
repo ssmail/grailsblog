@@ -56,7 +56,8 @@ class BootStrap {
                 tagLine: "Insert witty tagline here",
                 description: "Site description",
                 siteUrl: "http://www.grailsblog.com",
-                feedDescription: "GrailsBlog keeps you up to date with Grails, its supporting technologies and opinions")
+                feedDescription: "GrailsBlog keeps you up to date with Grails, its supporting technologies and opinions",
+                keyWords: "key, words, separated, by, commas")
         site.save()
     }
 } 

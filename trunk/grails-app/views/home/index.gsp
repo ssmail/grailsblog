@@ -4,6 +4,8 @@
         <meta name="layout" content="main"/>
         <title>${site}</title>
         <feed:meta kind="rss" version="2.0" controller="feed" action="rss"/>
+        <meta name="description" content="${site?.description}" />
+        <meta name="keywords" content="${site?.keyWords}"/>
     </head>
     <body>
         <div class="body">

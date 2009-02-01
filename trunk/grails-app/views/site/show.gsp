@@ -56,6 +56,20 @@
 
                         </tr>
 
+                        <tr class="prop">
+                            <td valign="top" class="name">Feed Description:</td>
+
+                            <td valign="top" class="value">${fieldValue(bean: siteInstance, field: 'feedDescription')}</td>
+
+                        </tr>
+
+                        <tr class="prop">
+                            <td valign="top" class="name">Keywords:</td>
+
+                            <td valign="top" class="value">${fieldValue(bean: siteInstance, field: 'keyWords')}</td>
+
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
