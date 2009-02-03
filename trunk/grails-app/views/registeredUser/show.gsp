@@ -4,14 +4,19 @@
         <meta name="layout" content="main"/>
         <title>Show RegisteredUser</title>
         <g:javascript>
-            Rico.onLoad(function() {
-                $("mainBody").addClassName("hideboth");
+            document.observe("dom:loaded", function() {
+                $("mainBody").className = "hideboth";
             });
         </g:javascript>
     </head>
     <body>
         <div class="nav">
             <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}">Home</a></span>
+            <span class="menuButton">
+                <a class="home" href="<g:createLink controller='admin' action='index'/>">
+                    Admin Home
+                </a>
+            </span>
             <span class="menuButton"><g:link class="list" action="list">RegisteredUser List</g:link></span>
             <span class="menuButton"><g:link class="create" action="create">New RegisteredUser</g:link></span>
         </div>

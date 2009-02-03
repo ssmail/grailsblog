@@ -25,7 +25,7 @@ input, select, textarea, button {
 }
 
 select {
-    padding: 2px 2px 2px 0;
+    f padding: 2px 2px 2px 0;
 }
 
 textarea {
@@ -324,6 +324,10 @@ h2 a:link, h2 a:visited, h2 a:hover {
     text-decoration: none;
 }
 
+#footerText {
+    text-align: right;
+}
+
 /*Posted Comments */
 .postedCommentsAll {
 
@@ -394,4 +398,8 @@ textarea.full {
 
 #col1_content, #col2_content, #col3_content {
     padding: 0 10px 10px;
+}
+.hidecol1 #col3 {
+    margin-left: 15px;
+    margin-right: 25%;
 }
