@@ -20,7 +20,6 @@
                                     controller="archive"
                                     action="show"
                                     id="${postInstance.id}"/>"
-                                    alt="<g:message code="blog.permalink" default="Permalink"/>"
                                     title="<g:message code="blog.permalink" default="Permalink"/>">
                                 ${postInstance.title.encodeAsHTML()}</a>
                         </h2>
