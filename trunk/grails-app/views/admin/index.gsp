@@ -22,6 +22,9 @@
             <div>
                 <g:link controller="author" action="list"><g:message code="author.admin" default="Author Admin"/></g:link>
             </div>
+            <div>
+                <g:link controller="postCategory" action="list"><g:message code="post.category.admin" default="Post Category Admin"/></g:link>
+            </div>
         </jsec:hasAnyRole>
         <jsec:hasAnyRole in="['AUTHOR', 'SUPER_ADMIN', 'ADMIN']">
         </jsec:hasAnyRole>
