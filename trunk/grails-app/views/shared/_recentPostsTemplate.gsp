@@ -1,4 +1,9 @@
-<h2><g:message code="recent.posts" default="Recent Posts"/></h2>
+<h2>
+    <g:message code="recent.posts" default="Recent Posts"/>
+    <g:link controller="feed" action="rss">
+        <img id="feed-icon" src="${createLinkTo(dir: 'images', file: 'feed-icon.png')}" alt="Feed Icon"/>
+    </g:link>
+</h2>
 <div id="recentPosts">
     <g:each in="${recentPosts}" var="post" status="i">
         <div class="recentPosts">

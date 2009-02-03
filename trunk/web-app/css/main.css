@@ -311,6 +311,10 @@ h1.siteTitle a {
     color: #000000;
 }
 
+#feed-icon {
+    padding: 0 0 0 0;
+}
+
 .postContent {
     margin: 10px 0 0 0;
 }
