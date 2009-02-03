@@ -14,7 +14,8 @@
 <% } %>
 <g:javascript>
     Rico.loadModule('Corner');
-    Rico.onLoad(function() {
+    
+    document.observe("dom:loaded", function() {
         var roundCorners = Rico.Corner.round.bind(Rico.Corner);
         roundCorners('page_margins');
         roundCorners('footer');
@@ -23,7 +24,7 @@
 </g:javascript>
 <g:layoutHead/>
 </head>
-<body id="mainBody">
+<body id="mainBody" class="${site.googleAdSense?.size() == 0 ? '' : 'hidecol1'}">
     <div id="page_margins">
         <div id="page">
             <div id="header">
@@ -99,8 +100,12 @@
             </div>
             <!-- end: #main -->
             <!-- begin: #footer -->
-            <div id="footer">Footer with copyright notice and status information<br/>
-                Layout based on <a href="http://www.yaml.de/">YAML</a></div>
+            <div id="footer">
+                <div id="footerText">
+                &copy;<g:formatDate format="yyyy" date="${new Date()}"/> ${site.title}<br/>
+                    Layout based on <a href="http://www.yaml.de/">YAML</a>
+                </div>
+            </div>
             <!-- end: #footer -->
         </div>
 

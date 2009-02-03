@@ -4,8 +4,8 @@
         <meta name="layout" content="main"/>
         <title>Edit Post</title>
         <g:javascript>
-            Rico.onLoad(function() {
-                $("mainBody").addClassName("hidecol1");
+            document.observe("dom:loaded", function() {
+                $("mainBody").className = "hidecol1";
                 $("postEdit").show();
             });
         </g:javascript>

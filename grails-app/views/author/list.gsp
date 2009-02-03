@@ -4,8 +4,8 @@
         <meta name="layout" content="main"/>
         <title>Author List</title>
         <g:javascript>
-            Rico.onLoad(function() {
-                $("mainBody").addClassName("hideboth");
+            document.observe("dom:loaded", function() {
+                $("mainBody").className = "hideboth";
             });
         </g:javascript>
     </head>
