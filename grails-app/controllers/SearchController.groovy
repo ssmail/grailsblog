@@ -1,6 +1,7 @@
 import org.compass.core.engine.SearchEngineQueryParseException
 
 class SearchController {
+    def postService
     def searchableService
 
     /**
@@ -22,6 +23,8 @@ class SearchController {
                 searchResults = searchableService.search(params.q, params)
             }
 
+            def recentPosts = postService.getRecentPosts()
+            searchResults.putAt("recentPosts", recentPosts)
             render(view: "index", model: searchResults)
         } catch (SearchEngineQueryParseException ex) {
             return [parseException: true]
