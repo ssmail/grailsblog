@@ -4,7 +4,29 @@
         <title><g:layoutTitle default="Grails"/></title>
         <link rel="stylesheet" href="${createLinkTo(dir: 'css', file: 'layout_shiny_buttons.css')}"/>
         <link rel="stylesheet" href="${createLinkTo(dir: 'css', file: 'main.css')}"/>
+        <% if (request.getHeader("user-agent").contains("MSIE 6.0")) { %>
+        <link rel="stylesheet" href="${createLinkTo(dir: 'css/patches', file: 'patch_shiny_buttons.css')}"/>
+        <% } %>
         <link rel="shortcut icon" href="${createLinkTo(dir: 'images', file: 'favicon.ico')}" type="image/x-icon"/>
+        <p:javascript src="prototype/prototype"/>
+        <p:javascript src="prototype/scriptaculous"/>
+        <p:javascript src="prototype/builder"/>
+        <p:javascript src="prototype/effects"/>
+        <p:javascript src="prototype/controls"/>
+        <p:javascript src="prototype/slider"/>
+        <p:javascript src="prototype/dragdrop"/>
+        <p:javascript src="application"/>
+        <g:javascript src="rico/rico.js"/>
+        <g:javascript>
+            Rico.loadModule('Corner');
+
+            document.observe("dom:loaded", function() {
+                var roundCorners = Rico.Corner.round.bind(Rico.Corner);
+                roundCorners('page_margins');
+                roundCorners('footer');
+            });
+
+        </g:javascript>
         <g:layoutHead/>
     </head>
     <body id="mainBody" class="${site.googleAdSense?.size() == 0 ? '' : 'hidecol1'}">
@@ -93,28 +115,6 @@
             </div>
 
         </div>
-        <p:javascript src="prototype/prototype"/>
-        <p:javascript src="prototype/scriptaculous"/>
-        <p:javascript src="prototype/builder"/>
-        <p:javascript src="prototype/effects"/>
-        <p:javascript src="prototype/controls"/>
-        <p:javascript src="prototype/slider"/>
-        <p:javascript src="prototype/dragdrop"/>
-        <p:javascript src="application"/>
-        <g:javascript src="rico/rico.js"/>
-        <% if (request.getHeader("user-agent").contains("MSIE 6.0")) { %>
-        <link rel="stylesheet" href="${createLinkTo(dir: 'css/patches', file: 'patch_shiny_buttons.css')}"/>
-        <% } %>
-        <g:javascript>
-            Rico.loadModule('Corner');
-
-            document.observe("dom:loaded", function() {
-                var roundCorners = Rico.Corner.round.bind(Rico.Corner);
-                roundCorners('page_margins');
-                roundCorners('footer');
-            });
-
-        </g:javascript>
         ${site?.googleAnalytics}
     </body>
 </html>

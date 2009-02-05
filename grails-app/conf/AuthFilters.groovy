@@ -50,7 +50,7 @@ public class AuthFilters {
             }
         }
 
-        postedCommentAdmin(controller: "postComment") {
+        postedCommentAdmin(controller: "postedComment") {
             before = {
                 accessControl {
                     role("SUPER_ADMIN") | role("ADMIN")
