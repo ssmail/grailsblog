@@ -47,7 +47,12 @@ class ArchiveController {
         }
         else {
             post.removeFromComments(postedComment)
-            flash.message = message(code:"comment.form.error", args:[])
+            if (recaptchaOK) {
+                flash.message = message(code: "comment.form.error", args: [])
+            }
+            else if (!recaptchaOK) {
+                flash.message = message(code: "recaptcha.error", args: [])
+            }
             render(template: '/shared/postedCommentsTemplate', model: [postInstance: post, postedComment: postedComment])
         }
     }
