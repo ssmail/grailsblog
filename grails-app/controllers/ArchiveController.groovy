@@ -42,8 +42,9 @@ class ArchiveController {
         post.addToComments(postedComment)
         if (recaptchaOK && !postedComment.hasErrors() && !post.hasErrors() && post.save()) {
             flash.message = null
-            recaptchaService.cleanUp(session)
-            render(template: '/shared/postedCommentsTemplate', model: [postInstance: post])
+            // recaptchaService is not cleaned up here because that invalidates it during an ajax response
+            //recaptchaService.cleanUp(session)
+            render(template: '/shared/commentTemplate', model: [postInstance: post])
         }
         else {
             post.removeFromComments(postedComment)
@@ -53,7 +54,7 @@ class ArchiveController {
             else if (!recaptchaOK) {
                 flash.message = message(code: "recaptcha.error", args: [])
             }
-            render(template: '/shared/postedCommentsTemplate', model: [postInstance: post, postedComment: postedComment])
+            render(template: '/shared/commentTemplate', model: [postInstance: post])
         }
     }
 }

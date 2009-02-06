@@ -11,8 +11,6 @@
     </div>
     <div id="postedCommentsAll">
         <h3>Comments:</h3>
-        <div id="postedComments">
-            <g:render template="/shared/postedCommentsTemplate" model="[comment : comment]"/>
-        </div>
+        <g:render template="/shared/postedCommentsTemplate" model="[comment : comment]"/>
     </div>
 </div>
