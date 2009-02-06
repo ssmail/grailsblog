@@ -23,6 +23,8 @@ class PostedCommentController {
     def delete = {
         def postedCommentInstance = PostedComment.get( params.id )
         if(postedCommentInstance) {
+            def post = postedCommentInstance.post
+            post.removeFromComments(postedCommentInstance)
             postedCommentInstance.delete()
             flash.message = "PostedComment ${params.id} deleted"
             redirect(action:list)
