@@ -41,7 +41,6 @@ class ArchiveController {
 
         post.addToComments(postedComment)
         if (recaptchaOK && !postedComment.hasErrors() && !post.hasErrors() && post.save()) {
-            flash.message = null
             // recaptchaService is not cleaned up here because that invalidates it during an ajax response
             //recaptchaService.cleanUp(session)
             render(template: '/shared/commentTemplate', model: [postInstance: post])
