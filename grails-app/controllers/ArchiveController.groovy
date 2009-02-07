@@ -9,10 +9,7 @@ class ArchiveController {
     def allowedMethods = [delete: 'POST', save: 'POST', update: 'POST']
 
     def list = {
-        if (!params.max) params.max = 100
-        if (!params.sort) params.sort = "displayDate"
-        if (!params.order) params.order = "desc"
-        [posts: Post.list(params), recentPosts: postService.getRecentPosts()]
+        postService.getDisplayablePosts(100, params.offset)
     }
 
     def show = {
