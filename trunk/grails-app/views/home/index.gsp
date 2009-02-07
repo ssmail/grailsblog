@@ -48,7 +48,7 @@
             <div class="paginateButtons">
                 <g:paginate controller="home"
                         action="index"
-                        total="${Post.count()}"/>
+                        total="${totalPosts}"/>
             </div>
         </div>
     </body>
