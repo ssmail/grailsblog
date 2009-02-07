@@ -12,6 +12,7 @@ class UrlMappings {
         "/"(controller: "home", action: "index")
         "/archive/show"(controller: "archive", action: "show")
         "/archive/saveComment"(controller: "archive", action: "saveComment")
+        "/archive/list"(controller: "archive", action: "list")
         "/feed/rss"(controller: "feed", action: "rss")
         "/feed/atom"(controller: "feed", action: "atom")
 
