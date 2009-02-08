@@ -14,9 +14,11 @@
         </g:each>
 
     </body>
-    <div class="paginateButtons">
-        <g:paginate controller="archive"
-                action="list"
-                total="${Post.count()}"/>
-    </div>
+    <g:if test="${totalPosts > posts.size()}">
+        <div class="paginateButtons">
+            <g:paginate controller="archive"
+                    action="list"
+                    total="${totalPosts}"/>
+        </div>
+    </g:if>
 </html>

@@ -11,7 +11,7 @@
         </div>
     </g:each>
     <div class="recentPostsMore">
-        <g:if test="${recentPosts?.size() == 10}">
+        <g:if test="${totalPosts > recentPosts?.size()}">
             <a href="<g:createLink controller="archive" action="list"/>"><g:message code="recent.posts.more" default="More"/></a>
         </g:if>
     </div>
