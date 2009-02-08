@@ -20,7 +20,7 @@ class ArchiveController {
             redirect(action: list)
         }
         else {
-            return [postInstance: postInstance, recentPosts: postService.getRecentPosts()]
+            return [postInstance: postInstance, totalPosts: postService.getTotalDisplayable(), recentPosts: postService.getRecentPosts()]
         }
     }
 

@@ -45,11 +45,13 @@
                     <div class="dots"></div>
                 </g:if>
             </g:each>
-            <div class="paginateButtons">
-                <g:paginate controller="home"
-                        action="index"
-                        total="${totalPosts}"/>
-            </div>
+            <g:if test="${totalPosts > posts.size()}">
+                <div class="paginateButtons">
+                    <g:paginate controller="home"
+                            action="index"
+                            total="${totalPosts}"/>
+                </div>
+            </g:if>
         </div>
     </body>
 </html>

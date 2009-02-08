@@ -27,4 +27,8 @@ class PostService {
 
         [posts: posts, totalPosts: total, recentPosts: getRecentPosts()]
     }
+
+    def getTotalDisplayable() {
+        Post.countByDisplayDateLessThanEquals(new Date())
+    }
 }
