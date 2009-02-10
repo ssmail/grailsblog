@@ -10,7 +10,8 @@
 <g:formRemote name="newComment"
         id="${postInstance.id}"
         url="[ controller: 'archive', action: 'saveComment']"
-        update="[success: 'postedComments', failure: 'postedComments']">
+        update="[success: 'postedComments', failure: 'postedComments']"
+        onComplete="Recaptcha.reload();">
     <div><g:message code="comment.form.title" default="Title"/>*</div>
     <g:textField class="commentFormInput" name="title" value="${postedComment?.title}"/>
 

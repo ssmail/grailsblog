@@ -21,5 +21,3 @@
         $('postCommentMessage').appear();
     </g:javascript>
 </g:if>
-
-<g:javascript>Recaptcha.reload();</g:javascript>
