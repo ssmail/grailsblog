@@ -11,7 +11,7 @@ if (Ajax && (Ajax != null)) {
         onComplete: function() {
             if ($('spinner') && Ajax.activeRequestCount == 0)
                 Effect.Fade('spinner', {duration:0.5,queue:'end'});
-            
+
             if ($('commentSpinner') && Ajax.activeRequestCount == 0)
                 Effect.Fade('commentSpinner', {duration:0.5,queue:'end'});
         }
