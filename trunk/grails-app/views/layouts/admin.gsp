@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <g:render template="/shared/layout/headTemplate"/>
+        <g:render template="/shared/layout/javascriptTemplate"/>
         <g:layoutHead/>
     </head>
     <body id="mainBody" class="${site.googleAdSense?.size() == 0 ? '' : 'hidecol1'}">
         <g:render template="/shared/layout/mainBodyTemplate"/>
-        <g:render template="/shared/layout/javascriptTemplate"/>
         ${site?.googleAnalytics}
     </body>
 </html>
