@@ -1,11 +1,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="layout" content="main"/>
+        <meta name="layout" content="admin"/>
         <title>Show Post</title>
         <g:javascript>
             document.observe("dom:loaded", function() {
-                $("mainBody").className = "hidecol1";
+                $("mainBody").className = "hideboth";
             });
         </g:javascript>
     </head>
