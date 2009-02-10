@@ -1,11 +1,4 @@
-<p:javascript src="prototype/prototype"/>
-<p:javascript src="prototype/scriptaculous"/>
-<p:javascript src="prototype/builder"/>
-<p:javascript src="prototype/effects"/>
-<p:javascript src="prototype/controls"/>
-%{--<p:javascript src="prototype/slider"/>--}%
-%{--<p:javascript src="prototype/dragdrop"/>--}%
-<p:javascript src="application"/>
+<p:javascript src='application.all'/>
 <g:javascript src="rico/rico.js"/>
 <g:javascript>
     Rico.loadModule('Corner');

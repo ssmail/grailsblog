@@ -109,19 +109,13 @@ uiperformance.exclusions = [
         "**/plugins/**"
 ]
 
-//uiperformance.bundles = [
-//   [type: 'js',
-//    name: 'application.all',
-//    files: ['application',
-//            'minmax',
-//            'prototype/animation',
-//            'prototype/builder',
-//            'prototype/controls',
-//            'prototype/dragdrop',
-//            'prototype/effects',
-//            'prototype/prototype',
-//            'prototype/rico',
-//            'prototype/scriptaculous',
-//            'prototype/slider',
-//            'prototype/sound']]
-//]
+uiperformance.bundles = [
+   [type: 'js',
+    name: 'application.all',
+    files: ['prototype/prototype',
+            'prototype/scriptaculous',
+            'prototype/builder',
+            'prototype/effects',
+            'prototype/controls',
+            'application']]
+]
