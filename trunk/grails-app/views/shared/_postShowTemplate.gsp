@@ -4,7 +4,7 @@
         <h2>${postInstance.title.encodeAsHTML()}</h2>
     </div>
     <div class="byLine">
-        by ${postInstance.author.encodeAsHTML()} on <g:formatDate format="MMMM d, yyyy" date="${postInstance.dateCreated}"/>
+        by ${postInstance.author.encodeAsHTML()} on <g:formatDate format="MMMM d, yyyy" date="${postInstance.displayDate}"/>
     </div>
     <div class="postContent">
         ${postInstance.content}

@@ -25,6 +25,8 @@ class SearchController {
 
             def recentPosts = postService.getRecentPosts()
             searchResults.putAt("recentPosts", recentPosts)
+            searchResults.results = searchResults.results.findAll{ it.displayDate < new Date()}
+            searchResults.total = searchResults.results.size()
             render(view: "index", model: searchResults)
         } catch (SearchEngineQueryParseException ex) {
             return [parseException: true]

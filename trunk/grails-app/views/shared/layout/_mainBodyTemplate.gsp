@@ -75,7 +75,7 @@
         <!-- begin: #footer -->
         <div id="footer">
             <div id="footerText">
-            &copy;<g:formatDate format="yyyy" date="${new Date()}"/> ${site.title} V<g:meta name="app.version"/>
+            &copy;<g:formatDate format="yyyy" date="${new Date()}"/> <g:link url="http://code.google.com/p/grailsblog/"> ${site.title} v<g:meta name="app.version"/></g:link>
                 <br/>
                 Layout based on <a href="http://www.yaml.de/">YAML</a>
             </div>
