@@ -15,9 +15,9 @@ class ArchiveController {
     def show = {
         def postInstance = Post.get(params.id)
 
-        if (!postInstance) {
-            flash.message = "Post not found with id ${params.id}"
-            redirect(action: list)
+        if (!postInstance || postInstance.displayDate > new Date()) {
+            flash.message = "Post not found"
+            redirect(controller: "home", action: "index")
         }
         else {
             return [postInstance: postInstance, totalPosts: postService.getTotalDisplayable(), recentPosts: postService.getRecentPosts()]
