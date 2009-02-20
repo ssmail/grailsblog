@@ -406,3 +406,8 @@ textarea.full {
     margin-left: 15px;
     margin-right: 25%;
 }
+
+p a:link, p a:visited, p a:hover {
+    color: #4D87C7;
+    text-decoration: none;
+}
