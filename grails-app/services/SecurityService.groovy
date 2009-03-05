@@ -10,7 +10,7 @@ class SecurityService {
         def currentUser
 
         if (subject.authenticated) {
-            currentUser = Author.findByUsername(SecurityUtils.getSubject()?.getPrincipal())
+            currentUser = JsecUser.findByUsername(SecurityUtils.getSubject()?.getPrincipal())
         }
 
         currentUser

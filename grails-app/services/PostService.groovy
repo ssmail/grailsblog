@@ -1,3 +1,5 @@
+import Post
+
 class PostService {
 
     boolean transactional = true

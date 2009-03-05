@@ -20,6 +20,8 @@ class UrlMappings {
 
         "/search/index"(controller: "search", action: "index")
 
+        "/author/about"(controller: "author", action: "about")
+
         // Admin access
         "/admin"(controller: "admin", action: "index")
         "/admin/$controller/$action?/$id?"()

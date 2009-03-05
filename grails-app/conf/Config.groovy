@@ -117,5 +117,6 @@ uiperformance.bundles = [
             'prototype/builder',
             'prototype/effects',
             'prototype/controls',
-            'application']]
+            'application',
+            'modalbox/modalbox']]
 ]

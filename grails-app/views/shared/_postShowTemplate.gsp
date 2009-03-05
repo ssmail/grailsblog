@@ -3,9 +3,7 @@
     <div class="postTitle">
         <h2>${postInstance.title.encodeAsHTML()}</h2>
     </div>
-    <div class="byLine">
-        by ${postInstance.author.encodeAsHTML()} on <g:formatDate format="MMMM d, yyyy" date="${postInstance.displayDate}"/>
-    </div>
+    <g:render template="/shared/byLineTemplate" model="[postInstance:postInstance]"/>
     <div class="postContent">
         ${postInstance.content}
     </div>
