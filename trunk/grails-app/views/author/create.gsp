@@ -40,7 +40,7 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'name', 'errors')}">
                                     <g:select optionKey="id" from="${UserName.list()}" name="name.id" value="${authorInstance?.name?.id}"></g:select>
-                                     or
+                                    or
                                     <g:link controller="userName" action="create">
                                         <g:message code="create.new.author.name" default="Create new author name"/>
                                     </g:link>
@@ -70,7 +70,14 @@
                                     <label for="about">About:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'about', 'errors')}">
-                                    <input type="text" id="about" name="about" value="${fieldValue(bean: authorInstance, field: 'about')}"/>
+                                    <fckeditor:editor
+                                            name="about"
+                                            width="100%"
+                                            height="400"
+                                            toolbar="Standard"
+                                            fileBrowser="default">
+                                        ${authorInstance.about}
+                                    </fckeditor:editor>
                                 </td>
                             </tr>
 

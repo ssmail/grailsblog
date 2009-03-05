@@ -18,7 +18,31 @@ public class AuthFilters {
             }
         }
 
-        authorAdmin(controller: "author") {
+        authorAdminCreate(controller: "author", action: "create") {
+            before = {
+                accessControl {
+                    role("SUPER_ADMIN") | role("ADMIN")
+                }
+            }
+        }
+
+        authorAdminEdit(controller: "author", action: "edit") {
+            before = {
+                accessControl {
+                    role("SUPER_ADMIN") | role("ADMIN")
+                }
+            }
+        }
+
+        authorAdminList(controller: "author", action: "list") {
+            before = {
+                accessControl {
+                    role("SUPER_ADMIN") | role("ADMIN")
+                }
+            }
+        }
+
+        authorAdminShow(controller: "author", action: "show") {
             before = {
                 accessControl {
                     role("SUPER_ADMIN") | role("ADMIN")
@@ -34,7 +58,7 @@ public class AuthFilters {
             }
         }
 
-        postAdmin(controller: "post", action: "create") {
+        postAdminAuthor(controller: "post", action: "create") {
             before = {
                 accessControl {
                     role("AUTHOR")
@@ -74,7 +98,7 @@ public class AuthFilters {
             }
         }
 
-        userAdmin(controller: "registeredUser") {
+        userAdminRegisteredUser(controller: "registeredUser") {
             before = {
                 accessControl {
                     role("SUPER_ADMIN") | role("ADMIN")

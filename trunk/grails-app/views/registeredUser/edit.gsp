@@ -3,7 +3,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="admin"/>
         <title>Edit RegisteredUser</title>
-        <modalbox:modalIncludes/>
         <g:javascript>
             document.observe("dom:loaded", function() {
                 $("mainBody").className = "hideboth";

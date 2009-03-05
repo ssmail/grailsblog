@@ -24,9 +24,7 @@
                                 ${postInstance.title.encodeAsHTML()}</a>
                         </h2>
                     </div>
-                    <div class="byLine">
-                        by ${postInstance.author.encodeAsHTML()} on <g:formatDate format="MMMM d, yyyy" date="${postInstance.displayDate}"/>
-                    </div>
+                    <g:render template="/shared/byLineTemplate" model="[postInstance:postInstance]"/>
                     <div class="postContent">
                         <g:if test="${postInstance.teaser.size() > 0}">
                             ${postInstance.teaser}

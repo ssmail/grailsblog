@@ -3,7 +3,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="admin"/>
         <title>Edit Author</title>
-        <modalbox:modalIncludes />
         <g:javascript>
             document.observe("dom:loaded", function() {
                 $("mainBody").className = "hideboth";
@@ -87,7 +86,14 @@
                                     <label for="about">About:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'about', 'errors')}">
-                                    <input type="text" id="about" name="about" value="${fieldValue(bean: authorInstance, field: 'about')}"/>
+                                    <fckeditor:editor
+                                            name="about"
+                                            width="100%"
+                                            height="400"
+                                            toolbar="Standard"
+                                            fileBrowser="default">
+                                        ${authorInstance.about}
+                                    </fckeditor:editor>
                                 </td>
                             </tr>
                             <tr class="prop">
