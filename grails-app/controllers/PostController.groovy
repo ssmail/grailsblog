@@ -15,11 +15,15 @@ class PostController {
     // the delete, save and update actions only accept POST requests
     def allowedMethods = [delete: 'POST', save: 'POST', update: 'POST']
 
+    /**
+     * Returns a list of the logged-in user's posts
+     */
     def list = {
-        if (!params.max) params.max = 10
-        if (!params.sort) params.sort = "displayDate"
-        if (!params.order) params.order = "desc"
-        [postInstanceList: Post.list(params)]
+
+        def user = securityService.getCurrentUser()
+        def posts = postService.getUserPosts(user, params)
+        params.totalPosts = posts.totalCount
+        [postInstanceList: posts, params: params]
     }
 
     def show = {

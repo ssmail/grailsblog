@@ -1,6 +1,13 @@
-class PostControllerTests extends GroovyTestCase {
+import SecurityService
 
-    void testSomething() {
+class PostControllerTests extends BaseTests {
 
+    void testList() {
+
+        def pc = new PostController()
+        pc.postService = setUp.postService
+        pc.securityService = setUp.securityService
+
+        pc.list()
     }
 }

@@ -64,7 +64,7 @@
                 </table>
             </div>
             <div class="paginateButtons">
-                <g:paginate total="${Post.count()}"/>
+                <g:paginate total="${params.totalPosts}"/>
             </div>
         </div>
     </body>
