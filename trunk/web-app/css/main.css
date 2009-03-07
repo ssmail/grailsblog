@@ -39,7 +39,7 @@ input:focus, select:focus, textarea:focus {
 /* NAVIGATION MENU */
 
 .nav {
-    background: #fff url( ../images/skin/shadow.jpg ) bottom repeat-x;
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
     border: 1px solid #ccc;
     border-style: solid none solid none;
     margin-top: 5px;
@@ -57,25 +57,25 @@ input:focus, select:focus, textarea:focus {
 }
 
 .menuButton a.home {
-    background: url( ../images/skin/house.png ) center left no-repeat;
+    background: url(../images/skin/house.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
 }
 
 .menuButton a.list {
-    background: url( ../images/skin/database_table.png ) center left no-repeat;
+    background: url(../images/skin/database_table.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
 }
 
 .menuButton a.create {
-    background: url( ../images/skin/database_add.png ) center left no-repeat;
+    background: url(../images/skin/database_add.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
 }
 
 .menuButton a.delete {
-    background: url( ../images/skin/database_delete.png ) center left no-repeat;
+    background: url(../images/skin/database_delete.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
 }
@@ -83,7 +83,7 @@ input:focus, select:focus, textarea:focus {
 /* MESSAGES AND ERRORS */
 
 .message {
-    background: #f3f8fc url( ../images/skin/information.png ) 8px 50% no-repeat;
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
     border: 1px solid #b2d1ff;
     color: #006dba;
     margin: 10px 0 5px 0;
@@ -104,7 +104,7 @@ div.errors ul {
 }
 
 div.errors li {
-    background: url( ../images/skin/exclamation.png ) 8px 0% no-repeat;
+    background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
     line-height: 16px;
     padding-left: 30px;
     margin: 0;
@@ -143,7 +143,7 @@ td, th {
 }
 
 th {
-    background: #fff url( ../images/skin/shadow.jpg );
+    background: #fff url(../images/skin/shadow.jpg);
     color: #333333;
     font-size: 10px;
     font-weight: bold;
@@ -165,11 +165,11 @@ th.asc a, th.desc a {
 }
 
 th.asc a {
-    background-image: url( ../images/skin/sorted_asc.gif );
+    background-image: url(../images/skin/sorted_asc.gif);
 }
 
 th.desc a {
-    background-image: url( ../images/skin/sorted_desc.gif );
+    background-image: url(../images/skin/sorted_desc.gif);
 }
 
 .odd {
@@ -201,7 +201,7 @@ tr.clickable {
 /* PAGINATION */
 
 .paginateButtons {
-    background: #fff url( ../images/skin/shadow.jpg ) bottom repeat-x;
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
     border: 1px solid #ccc;
     color: #666;
     font-size: 10px;
@@ -247,7 +247,7 @@ tr.clickable {
 /* ACTION BUTTONS */
 
 .buttons {
-    background: #fff url( ../images/skin/shadow.jpg ) bottom repeat-x;
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
     border: 1px solid #ccc;
     color: #666;
     font-size: 10px;
@@ -269,17 +269,17 @@ tr.clickable {
 }
 
 .buttons input.delete {
-    background: transparent url( ../images/skin/database_delete.png ) 5px 50% no-repeat;
+    background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
 
 .buttons input.edit {
-    background: transparent url( ../images/skin/database_edit.png ) 5px 50% no-repeat;
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
 
 .buttons input.save {
-    background: transparent url( ../images/skin/database_save.png ) 5px 50% no-repeat;
+    background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
 
@@ -363,7 +363,7 @@ h4.commentTitle {
 
 .dots {
     height: 2em;
-    background: transparent url( ../images/dots.gif ) repeat-x scroll center;
+    background: transparent url(../images/dots.gif) repeat-x scroll center;
 }
 
 /* Comment Form */
@@ -379,7 +379,7 @@ h4.commentTitle {
 
 /* Recent Posts */
 .recentPosts {
-    background: transparent url( ../images/dots.gif ) repeat-x scroll center bottom;
+    background: transparent url(../images/dots.gif) repeat-x scroll center bottom;
     padding: 5px 0 5px 0;
 }
 
@@ -402,6 +402,7 @@ textarea.full {
 #col1_content, #col2_content, #col3_content {
     padding: 0 10px 10px;
 }
+
 .hidecol1 #col3 {
     margin-left: 15px;
     margin-right: 25%;
@@ -410,4 +411,9 @@ textarea.full {
 p a:link, p a:visited, p a:hover {
     color: #4D87C7;
     text-decoration: none;
+}
+
+/* About Modal Dialog */
+#MB_content p img {
+    margin-right: 10px;
 }
