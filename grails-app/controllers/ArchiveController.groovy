@@ -1,3 +1,6 @@
+import Post
+import PostedComment
+
 class ArchiveController {
 
     def recaptchaService
@@ -20,7 +23,10 @@ class ArchiveController {
             redirect(controller: "home", action: "index")
         }
         else {
-            return [postInstance: postInstance, totalPosts: postService.getTotalDisplayable(), recentPosts: postService.getRecentPosts()]
+            return [
+                    postInstance: postInstance,
+                    totalPosts: postService.getTotalDisplayable(),
+                    recentPosts: postService.getRecentPosts()]
         }
     }
 
@@ -29,6 +35,8 @@ class ArchiveController {
         params.remove("id")
         params.dateCreated = new Date()
         params.lastUpdated = new Date()
+        // Prototype doesn't like an id of name 'content' so this is the workaround
+        params.content = params?.newCommentContent
         def postedComment = new PostedComment(params)
 
         def recaptchaOK = true
@@ -50,7 +58,8 @@ class ArchiveController {
             else if (!recaptchaOK) {
                 flash.message = message(code: "recaptcha.error", args: [])
             }
-            render(template: '/shared/commentTemplate', model: [postInstance: post])
+
+            response.sendError(404)
         }
     }
 }

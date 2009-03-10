@@ -9,4 +9,6 @@
         roundCorners('footer');
     });
 
+    SyntaxHighlighter.config.clipboardSwf = "js/syntaxhighlighter_2/clipboard.swf";
+    SyntaxHighlighter.all();
 </g:javascript>

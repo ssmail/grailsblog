@@ -118,5 +118,10 @@ uiperformance.bundles = [
             'prototype/effects',
             'prototype/controls',
             'application',
-            'modalbox/modalbox']]
+            'modalbox/modalbox',
+            'syntaxhighlighter_2/shCore',
+            'syntaxhighlighter_2/shBrushGroovy',
+            'syntaxhighlighter_2/shBrushJava',
+            'syntaxhighlighter_2/shBrushJScript',
+            'syntaxhighlighter_2/shBrushXml']]
 ]
