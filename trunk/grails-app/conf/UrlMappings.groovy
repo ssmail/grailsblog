@@ -28,5 +28,6 @@ class UrlMappings {
 
         // Error handling
         "500"(view: '/error')
+        "404"(controller: "errors", action: "renderError")
     }
 }

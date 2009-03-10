@@ -14,10 +14,3 @@
     </div>
     <div class="dots"></div>
 </g:each>
-
-<g:if test="${flash.message}">
-    <div id="postCommentMessage" class="message" style="display:none;">${flash.message}</div>
-    <g:javascript>
-        $('postCommentMessage').appear();
-    </g:javascript>
-</g:if>
