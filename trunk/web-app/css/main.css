@@ -344,6 +344,10 @@ h2 a:link, h2 a:visited, h2 a:hover {
     background: #F9F9F9 none repeat scroll 0 0;
 }
 
+h4.commentBg {
+    color: #666666;
+}
+
 #postedCommentsAll h3 {
     color: #182E7A;
 }
