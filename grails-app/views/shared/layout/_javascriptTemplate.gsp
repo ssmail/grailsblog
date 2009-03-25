@@ -9,6 +9,6 @@
         roundCorners('footer');
     });
 
-    SyntaxHighlighter.config.clipboardSwf = "js/syntaxhighlighter_2/clipboard.swf";
+    SyntaxHighlighter.config.clipboardSwf = "${createLinkTo(dir: 'js/syntaxhighlighter_2', file: 'clipboard.swf')}";
     SyntaxHighlighter.all();
 </g:javascript>
