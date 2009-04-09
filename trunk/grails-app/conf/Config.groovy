@@ -123,5 +123,6 @@ uiperformance.bundles = [
             'syntaxhighlighter_2/shBrushGroovy',
             'syntaxhighlighter_2/shBrushJava',
             'syntaxhighlighter_2/shBrushJScript',
+            'syntaxhighlighter_2/shBrushCss',
             'syntaxhighlighter_2/shBrushXml']]
 ]
