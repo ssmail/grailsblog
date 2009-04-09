@@ -18,10 +18,10 @@
         onComplete="Recaptcha.reload();"
         onLoaded="Effect.Fade('commentSpinner', {duration:0.5,queue:'end'}); Effect.Fade('spinner', {duration:0.5,queue:'end'});">
     <div><g:message code="comment.form.title" default="Title"/>*</div>
-    <g:textField class="commentFormInput" name="title" value="${postedComment?.title}"/>
+    <g:textField class="commentFormInput" name="title" value="${postedComment?.title}" maxlength="100"/>
 
     <div><g:message code="comment.form.name" default="Name"/>*</div>
-    <g:textField class="commentFormInput" name="anonymousName" value="${postedComment?.anonymousName}"/>
+    <g:textField class="commentFormInput" name="anonymousName" value="${postedComment?.anonymousName}" maxlength="100"/>
 
     <div><g:message code="comment.form.content" default="Comment"/>*</div>
     <g:textArea class="commentFormTextArea" name="newCommentContent" value="${postedComment?.content}"/>

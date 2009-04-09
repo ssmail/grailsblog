@@ -10,7 +10,7 @@ class PostedComment implements Comparable{
 
     static constraints = {
         title(blank: false, size: 1..100)
-        content(blank: false, size: 1..250)
+        content(blank: false, size: 1..1000)
         commenter(nullable:true)
         anonymousName(blank: false, size: 1..100)
     }
