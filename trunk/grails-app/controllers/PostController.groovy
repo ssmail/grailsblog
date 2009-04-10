@@ -83,10 +83,9 @@ class PostController {
 
     // Called when create button is clicked.  Takes user to the create page
     def create = {
-
         def currentUser = securityService.getCurrentUser()
         def postInstance = new Post()
-
+		params.displayDate = new Date() + 1
         postInstance.properties = params
         return ['postInstance': postInstance, author: currentUser, recentPosts: postService.getRecentPosts()]
     }
