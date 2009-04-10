@@ -27,9 +27,9 @@
             </div>
         </jsec:hasAnyRole>
         <jsec:hasAnyRole in="['AUTHOR', 'SUPER_ADMIN', 'ADMIN']">
+            <div>
+                <g:link controller="post" action="list"><g:message code="post.admin" default="Post Admin"/></g:link>
+            </div>
         </jsec:hasAnyRole>
-        <div>
-            <g:link controller="post" action="list"><g:message code="post.admin" default="Post Admin"/></g:link>
-        </div>
     </body>
 </html>

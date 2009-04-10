@@ -50,6 +50,14 @@ public class AuthFilters {
             }
         }
 
+        marginContentAdmin(controller: "marginContent") {
+            before = {
+                accessControl {
+                    role("SUPER_ADMIN") | role("ADMIN") | role("AUTHOR")
+                }
+            }
+        }
+
         postAdmin(controller: "post") {
             before = {
                 accessControl {

@@ -207,7 +207,7 @@ tr.clickable {
     font-size: 10px;
     overflow: hidden;
     padding: 10px 3px;
-    margin: 20px 0 10px 0;
+    margin: 0 0 10px 0;
 }
 
 .paginateButtons a {
@@ -251,7 +251,7 @@ tr.clickable {
     border: 1px solid #ccc;
     color: #666;
     font-size: 10px;
-    margin-top: 5px;
+    margin-top: 0;
     overflow: hidden;
     padding: 0;
 }
@@ -297,8 +297,8 @@ label {
 }
 
 /* Post Admin */
-.almostFull {
-    width: 98%;
+.almostFull, input.full {
+    width: 97%;
 }
 
 td.name {
