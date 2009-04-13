@@ -52,14 +52,30 @@ class ArchiveController {
         }
         else {
             post.removeFromComments(postedComment)
-            if (recaptchaOK) {
-                flash.message = message(code: "comment.form.error", args: [])
-            }
-            else if (!recaptchaOK) {
-                flash.message = message(code: "recaptcha.error", args: [])
-            }
-
+            flash.message = generateCommentErrorMessage(postedComment, recaptchaOK)
             response.sendError(404)
         }
+    }
+
+    def generateCommentErrorMessage(postedComment, recaptchaOK) {
+        def msg
+        postedComment.validate()
+        def contentError = postedComment?.errors?.getFieldError("content")
+          
+        if (recaptchaOK) {
+            def commentTooLarge = contentError != null && postedComment.content?.size() > 0
+            
+            if (commentTooLarge {
+                msg = message(code: "comment.form.content.too.big.error", args: [postedComment.content.size()])
+            }
+            else {
+                msg = message(code: "comment.form.error", args: [])
+            }
+        }
+        else if (!recaptchaOK) {
+            msg = message(code: "recaptcha.error", args: [])
+        }
+        
+        return msg
     }
 }
