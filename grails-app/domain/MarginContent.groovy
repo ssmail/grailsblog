@@ -2,6 +2,8 @@ class MarginContent {
 	
 	String title = ""
 	String content = ""
+	Boolean active = false
+	Integer displayPriority = 1
 	
 	static mapping = {
 		cache: true

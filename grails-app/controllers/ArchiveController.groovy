@@ -65,7 +65,7 @@ class ArchiveController {
         if (recaptchaOK) {
             def commentTooLarge = contentError != null && postedComment.content?.size() > 0
             
-            if (commentTooLarge {
+            if (commentTooLarge) {
                 msg = message(code: "comment.form.content.too.big.error", args: [postedComment.content.size()])
             }
             else {
