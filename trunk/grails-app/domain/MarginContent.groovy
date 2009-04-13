@@ -4,6 +4,7 @@ class MarginContent {
 	String content = ""
 	
 	static mapping = {
+		cache: true
 		content type: "text"
 	}
 	
