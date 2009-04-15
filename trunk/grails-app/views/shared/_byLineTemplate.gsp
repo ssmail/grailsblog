@@ -1,4 +1,4 @@
-<div class="byLine">
+<p class="byline">
     by
     <% modalTitle = message(code: "about", args: []) + " " + postInstance.author.encodeAsHTML() %>
     <modalbox:createLink
@@ -11,4 +11,4 @@
     </modalbox:createLink>
 
     on <g:formatDate format="MMMM d, yyyy" date="${postInstance.displayDate}"/>
-</div>
+</p>
