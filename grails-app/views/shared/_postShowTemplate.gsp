@@ -1,14 +1,21 @@
-<div id="postShow">
-
-    <div class="postTitle">
-        <h2>${postInstance.title.encodeAsHTML()}</h2>
+<div class="post">
+    <h1 class="title">
+        ${postInstance.title.encodeAsHTML()}</a>
+    </h1>
+    <div class="entry">
+        <g:if test="${postInstance.teaser.size() > 0}">
+            ${postInstance.teaser}
+        </g:if>
+        <g:else>
+            ${postInstance.content}
+        </g:else>
     </div>
-    <g:render template="/shared/byLineTemplate" model="[postInstance:postInstance]"/>
-    <div class="postContent">
-        ${postInstance.content}
-    </div>
-    <div id="postedCommentsAll">
-        <h3>Comments:</h3>
-        <g:render template="/shared/postedCommentsTemplate" model="[comment : comment]"/>
-    </div>
+	<div class="meta">
+		<g:render template="/shared/byLineTemplate" model="[postInstance:postInstance]"/>
+		<p class="links">
+            <b>|</b> <a href="#" class="comments">Comments (32)</a>
+        </p>
+	</div>
+    <h3 class="title">Comments:</h3>
+    <g:render template="/shared/postedCommentsTemplate" model="[comment : comment]"/>
 </div>
