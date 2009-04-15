@@ -12,8 +12,9 @@
 </div>
 <div id="logo-wrap">
 <div id="logo">
-	<h1><a href="#">lotus flower </a></h1>
-	<h2> Design by Free Css Templates</h2>
+    <% homeText = message(code: "home", args: []) %>
+	<h1><g:link controller="home" action="index" title="${homeText}">${site?.title}</g:link></h1>
+	<h2> ${site?.tagLine}</h2>
 </div>
 </div>
 <!-- end header -->
