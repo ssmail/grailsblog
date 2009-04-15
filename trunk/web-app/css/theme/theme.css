@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, .label {
 	margin: 0;
 	text-transform: lowercase;
 	font-weight: normal;
-	color: #559106;
+	color: #008D37;
 }
 
 h1 {
@@ -37,16 +37,16 @@ p, ul, ol {
 }
 
 a:link {
-	color: #4E8006;
+	color: #008D37;
 }
 
 a:hover, a:active {
 	text-decoration: none;
-	color: #4E8006;
+	color: #008D37;
 }
 
 a:visited {
-	color: #4E8006;
+	color: #008D37;
 }
 
 img {
@@ -92,7 +92,7 @@ input, textarea, select {
 	width: 860px;
 	height: 52px;
 	margin: 0 auto;
-	background: url(../../images/theme/img02.jpg) no-repeat left top;
+	background: url(../../images/theme/img02.png) no-repeat left top;
 }
 
 /* Menu */
@@ -149,7 +149,7 @@ input, textarea, select {
 	width: 820px;
 	height: 200px;
 	margin: 0 auto;
-	background: url(../../images/theme/img05.jpg) no-repeat left top;
+	background: url(../../images/theme/banner.png) no-repeat left top;
 }
 
 #logo h1, #logo h2 {
@@ -220,9 +220,9 @@ input, textarea, select {
 .post h2 {
 	height: 32px;
 	padding: 8px 0 0 15px;
-	background: url(../../images/theme/img09.jpg) no-repeat left top;
+	background: url(../../images/theme/img09.png) no-repeat left top;
 	font-size: 18px;
-	color: #DADADA;
+	color: #FFFFFF;
 }
 
 .post .entry {
@@ -293,9 +293,9 @@ input, textarea, select {
 	height: 32px;
 	padding: 8px 0 0 15px;
 	margin-bottom: 10px;
-	background: url(../../images/theme/img07.jpg) no-repeat left top;
+	background: url(../../images/theme/img07.png) no-repeat left top;
 	font-size: 18px;
-	color: #DADADA;
+	color: #FFFFFF;
 }
 
 /* Search */
@@ -317,7 +317,7 @@ input, textarea, select {
 .buttonStyle {
 	padding: 3px;
 	border: none;
-	background: #467805;
+	background: #008D37;
 	text-transform: lowercase;
 	font-size: 11px;
 	color: #FFFFFF;
@@ -354,7 +354,7 @@ input, textarea, select {
 	width: 860px;
 	height: 64px;
 	margin: 0 auto;
-	background: url(../../images/theme/img04.jpg) no-repeat left top;
+	background: url(../../images/theme/img04.png) no-repeat left top;
 }
 
 #footer {
@@ -375,11 +375,11 @@ html>body #footer {
 	clear: both;
 	padding-top: 10px;
 	text-align: center;
-	color: #999999;
+	color: #FFFFFF;
 }
 
 #legal a {
-	color: #999999;
+	color: #FFFFFF;
 }
 
 /*  Tweaks  */

@@ -1,6 +1,6 @@
 <div class="post">
     <h1 class="title">
-        ${postInstance.title.encodeAsHTML()}</a>
+        ${postInstance.title.encodeAsHTML()}
     </h1>
     <div class="entry">
         <g:if test="${postInstance.teaser.size() > 0}">
