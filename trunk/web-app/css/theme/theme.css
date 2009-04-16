@@ -99,7 +99,7 @@ input, textarea, select {
 
 #menu {
 	float: left;
-	width: 860px;
+	width: 650px;
 	height: 54px;
 }
 
@@ -301,6 +301,7 @@ input, textarea, select {
 /* Search */
 
 #search {
+    padding: 12px;
 }
 
 #search h2 {
