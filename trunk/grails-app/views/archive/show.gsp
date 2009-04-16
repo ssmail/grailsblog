@@ -5,6 +5,6 @@
         <title>${site.title} - ${postInstance.title}</title>
     </head>
     <body>
-        <g:render template="/shared/postShowTemplate" model="[postInstance : postInstance]"/>
+        <g:render template="/shared/postShowTemplate" model="[postInstance: postInstance]"/>
     </body>
 </html>

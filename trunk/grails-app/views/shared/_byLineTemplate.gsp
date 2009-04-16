@@ -4,7 +4,7 @@
     <modalbox:createLink
             controller="author"
             action="about"
-            id="${postInstance.author.id.encodeAsHTML()}"
+            id="${postInstance?.author?.id?.encodeAsHTML()}"
             title="${modalTitle}"
             width="400">
         ${postInstance.author.encodeAsHTML()}
