@@ -2,9 +2,12 @@
 <div id="header">
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="#">Homepage</a></li>
-			<li><a href="#">Blogs</a></li>
-			<li><a href="#">Photos</a></li>
+		    <li class="current_page_item">
+			    <g:link controller="home" action="index">Homepage</g:link>
+            </li>
+		    <li>
+			    <g:link controller="archive" action="list">Articles</g:link>
+            </li>
 			<li><a href="#">About</a></li>
 			<li class="last"><a href="#">Contact</a></li>
 		</ul>

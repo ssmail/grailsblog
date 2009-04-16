@@ -11,7 +11,7 @@
         </g:else>
     </div>
 	<div class="meta">
-		<g:render template="/shared/byLineTemplate" model="[postInstance:postInstance]"/>
+		<g:render template="/shared/byLineTemplate" model="[postInstance: postInstance]"/>
 		<p class="links">
             <b>|</b> <a href="#" class="comments">Comments (32)</a>
         </p>
