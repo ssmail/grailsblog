@@ -12,6 +12,12 @@
 			<li class="last"><a href="#">Contact</a></li>
 		</ul>
 	</div>
+	<div id="search">
+		<g:render template="/shared/searchBoxTemplate"/>
+        <jsec:isLoggedIn>
+            Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)
+        </jsec:isLoggedIn>
+    </div>
 </div>
 <div id="logo-wrap">
 <div id="logo">
@@ -31,13 +37,6 @@
 	<!-- start sidebar -->
 	<div id="sidebar">
 		<ul>
-			<li id="search">
-				<h2>Search</h2>
-				<g:render template="/shared/searchBoxTemplate"/>
-                <jsec:isLoggedIn>
-                    Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)
-                </jsec:isLoggedIn>
-			</li>
 			<li>
 			    <g:render template="/shared/recentPostsTemplate" model="[postInstance : postInstance]"/>
 			</li>
