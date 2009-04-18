@@ -30,22 +30,24 @@ h2 {
 }
 
 p, ul, ol {
-	margin: 0 0 2em 0;
+	margin: 0 0 1.5em 0;
 	text-align: justify;
-	line-height: 26px;
-	font-size: 11px;
+	font-size:13px;
+    line-height:18px;
 }
 
 a:link {
 	color: #008D37;
-}
-
-a:hover, a:active {
 	text-decoration: none;
-	color: #008D37;
 }
 
 a:visited {
+	color: #008D37;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
 	color: #008D37;
 }
 
@@ -238,6 +240,7 @@ input, textarea, select {
 	margin: 0;
 	line-height: normal;
 	color: #999999;
+	font-size: 11px;
 }
 
 .post .meta .byline {
@@ -288,6 +291,7 @@ input, textarea, select {
     line-height:17px;
     margin:0 0 5px;
     padding-left:15px;
+    font-size: 11px;
 }
 
 #sidebar h2 {
@@ -657,4 +661,44 @@ th.desc a {
 .buttons input.save {
     background: transparent url(../../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
+}
+
+/* Post Comments */
+
+.postedCommentsAll {
+
+}
+
+.comment, .commentBg {
+    padding: 3px 10px 10px 10px;
+}
+
+.commentBg {
+    background: #F9F9F9 none repeat scroll 0 0;
+}
+
+h4.commentBg {
+    color: #666666;
+}
+
+#postedCommentsAll h3 {
+    color: #182E7A;
+}
+
+h4.commentTitle {
+    margin: 1em 0 0 0;
+}
+
+.commentByLine {
+    color: #999999;
+    margin: 0 0 1em 0;
+}
+
+.commentContent {
+    margin: 0 0 0.5em 0;
+}
+
+.dots {
+    height: 2em;
+    background: transparent url(../../images/dots.gif) repeat-x scroll center;
 }
