@@ -57,6 +57,20 @@
                         </tr>
 
                         <tr class="prop">
+                            <td valign="top" class="name">Welcome Message Title:</td>
+
+                            <td valign="top" class="value">${fieldValue(bean: siteInstance, field: 'welcomeMessageTitle')}</td>
+
+                        </tr>
+
+                        <tr class="prop">
+                            <td valign="top" class="name">Welcome Message:</td>
+
+                            <td valign="top" class="value">${siteInstance.welcomeMessage}</td>
+
+                        </tr>
+
+                        <tr class="prop">
                             <td valign="top" class="name">Feed Description:</td>
 
                             <td valign="top" class="value">${fieldValue(bean: siteInstance, field: 'feedDescription')}</td>

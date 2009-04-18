@@ -78,6 +78,31 @@
                                 <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'description', 'errors')}">
                                     <textarea class="full" rows="5" name="description">${fieldValue(bean: siteInstance, field: 'description')}</textarea>
                                 </td>
+                            </tr>    
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="welcomeMessageTitle">Welcome Message Title:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'welcomeMessageTitle', 'errors')}">
+                                    <input type="text" id="welcomeMessageTitle" name="welcomeMessageTitle" value="${fieldValue(bean: siteInstance, field: 'welcomeMessageTitle')}"/>
+                                </td>
+                            </tr>    
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="content">Welcome Message:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'welcomeMessage', 'errors')}">
+                                    <fckeditor:editor
+                                            name="welcomeMessage"
+                                            width="100%"
+                                            height="400"
+                                            toolbar="Standard"
+                                            fileBrowser="default">
+                                        ${siteInstance.welcomeMessage}
+                                    </fckeditor:editor>
+                                </td>
                             </tr>
 
                             <tr class="prop">

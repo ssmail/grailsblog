@@ -8,8 +8,6 @@
 		    <li>
 			    <g:link controller="archive" action="list">Articles</g:link>
             </li>
-			<li><a href="#">About</a></li>
-			<li class="last"><a href="#">Contact</a></li>
 		</ul>
 	</div>
 	<div id="search">
@@ -39,6 +37,9 @@
 		<ul>
 			<li>
 			    <g:render template="/shared/recentPostsTemplate" model="[postInstance : postInstance]"/>
+			</li>
+			<li>
+			    ${site?.googleAdSense}
 			</li>
 		</ul>
 	</div>
