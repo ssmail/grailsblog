@@ -3,19 +3,14 @@
         ${postInstance.title.encodeAsHTML()}
     </h1>
     <div class="entry">
-        <g:if test="${postInstance.teaser.size() > 0}">
-            ${postInstance.teaser}
-        </g:if>
-        <g:else>
-            ${postInstance.content}
-        </g:else>
+        ${postInstance?.content}
     </div>
 	<div class="meta">
 		<g:render template="/shared/byLineTemplate" model="[postInstance: postInstance]"/>
 		<p class="links">
-            <b>|</b> <a href="#" class="comments">Comments (32)</a>
+            <b>|</b> <a href="#" class="comments">Comments (${postInstance?.comments?.size()})</a>
         </p>
 	</div>
-    <h3 class="title">Comments:</h3>
+    <h3 class="title">Comments:</h3><a name="comments"></a>
     <g:render template="/shared/postedCommentsTemplate" model="[comment : comment]"/>
 </div>
