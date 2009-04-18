@@ -48,11 +48,11 @@
                             title="<g:message code="blog.permalink" default="Permalink"/>">
                             Read full article
                         </a> 
-                        <b>|</b> <a href="#" class="comments">Comments (32)</a>
+                        <b>|</b> <g:link class="comments" controller="archive" action="show" id="${postInstance.id}">Comments (${postInstance?.comments?.size()})</g:link>
                     </p>
     			</div>
             </div>
-        </g:each> 
+        </g:each>
         <g:if test="${totalPosts > posts.size()}">
             <div class="paginateButtons">
                 <g:paginate controller="home"
