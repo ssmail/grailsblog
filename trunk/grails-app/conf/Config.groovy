@@ -105,7 +105,6 @@ uiperformance.processCSS = false
 uiperformance.processImages = false
 uiperformance.continueAfterMinifyJsError = true
 uiperformance.exclusions = [
-        "**/js/rico/**",
         "**/plugins/**"
 ]
 
