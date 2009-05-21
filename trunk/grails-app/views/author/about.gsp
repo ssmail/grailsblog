@@ -1,5 +1,5 @@
 <html>
-    <body>
-        ${author?.about}
-    </body>
+  <body>
+    ${author?.about}
+  </body>
 </html>

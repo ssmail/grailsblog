@@ -35,8 +35,13 @@
 	<!-- start sidebar -->
 	<div id="sidebar">
 		<ul>
+                        <g:if test="${postInstance?.author?.about}">
+                              <li>
+                                  <g:render template="/shared/aboutAuthorTemplate"/>
+                              </li>
+                        </g:if>
 			<li>
-			    <g:render template="/shared/recentPostsTemplate" model="[postInstance : postInstance]"/>
+			    <g:render template="/shared/recentPostsTemplate"/>
 			</li>
 			<li>
 			    ${site?.googleAdSense}

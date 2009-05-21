@@ -1,6 +1,7 @@
 class Author extends Commenter {
 
     String about = ""
+    String aboutMargin = ""
     SortedSet posts = new TreeSet()
 
     static hasMany = [posts: Post]
@@ -11,6 +12,7 @@ class Author extends Commenter {
 
     static mapping = {
         about type: "text"
+        aboutMargin type: "text"
         cache true
         posts cache: 'nonstrict-read-write'
     }

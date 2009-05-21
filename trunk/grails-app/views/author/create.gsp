@@ -83,6 +83,22 @@
 
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="aboutMargin">About Margin:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'aboutMargin', 'errors')}">
+                                    <fckeditor:editor
+                                            name="aboutMargin"
+                                            width="100%"
+                                            height="400"
+                                            toolbar="Standard"
+                                            fileBrowser="default">
+                                        ${authorInstance.aboutMargin}
+                                    </fckeditor:editor>
+                                </td>
+                            </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="posts">Posts:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'posts', 'errors')}">
