@@ -74,6 +74,13 @@
                         </tr>
 
                         <tr class="prop">
+                            <td valign="top" class="name">About Margin:</td>
+
+                            <td valign="top" class="value">${authorInstance.aboutMargin}</td>
+
+                        </tr>
+
+                        <tr class="prop">
                             <td valign="top" class="name">Posts:</td>
 
                             <td valign="top" style="text-align:left;" class="value">
