@@ -35,7 +35,7 @@
 	<!-- start sidebar -->
 	<div id="sidebar">
 		<ul>
-                        <g:if test="${postInstance?.author?.about}">
+                        <g:if test="${postInstance?.author?.aboutMargin}">
                               <li>
                                   <g:render template="/shared/aboutAuthorTemplate"/>
                               </li>
