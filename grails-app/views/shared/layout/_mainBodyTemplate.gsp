@@ -37,7 +37,7 @@
 		<ul>
                         <g:if test="${postInstance?.author?.aboutMargin}">
                               <li>
-                                  <g:render template="/shared/aboutAuthorTemplate"/>
+                                  <g:render template="/author/aboutAuthorMarginContentTemplate"/>
                               </li>
                         </g:if>
 			<li>
