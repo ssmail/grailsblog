@@ -702,3 +702,8 @@ h4.commentTitle {
     height: 2em;
     background: transparent url(../../images/dots.gif) repeat-x scroll center;
 }
+
+/*  Side Margin Content */
+.marginContent p {
+    text-align: left;
+}
