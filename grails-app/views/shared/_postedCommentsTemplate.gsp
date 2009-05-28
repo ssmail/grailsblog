@@ -17,7 +17,7 @@
         onSuccess="clearCommentForm();"
         onComplete="Recaptcha.reload();"
         onLoaded="Effect.Fade('commentSpinner', {duration:0.5,queue:'end'}); Effect.Fade('spinner', {duration:0.5,queue:'end'});">
-    <div class="label"><g:message code="comment.form.title" default="Title"/>*</div>
+    <div class="label"><g:message code="comment.form.title" default="Subject"/>*</div>
     <g:textField class="inputStyle standardFormInput" name="title" value="${postedComment?.title}" maxlength="100"/>
 
     <div class="label"><g:message code="comment.form.name" default="Name"/>*</div>
