@@ -16,7 +16,7 @@ Description: A two-column, fixed-width and lightweight template ideal for 1024x7
     <g:render template="/shared/layout/headTemplate"/>
     <g:layoutHead/>
 </head>
-<body id="mainBody" class="${site.googleAdSense?.size() > 0 ? '' : 'hidecol1'}">
+<body id="mainBody">
     <g:render template="/shared/layout/mainBodyTemplate"/>
     <g:render template="/shared/layout/javascriptTemplate"/>
     ${site?.googleAnalytics}

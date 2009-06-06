@@ -5,7 +5,7 @@
         <g:render template="/shared/layout/javascriptTemplate"/>
         <g:layoutHead/>
     </head>
-    <body id="mainBody" class="${site.googleAdSense?.size() == 0 ? '' : 'hidecol1'}">
+    <body id="mainBody">
         <g:render template="/shared/layout/mainBodyTemplate"/>
         ${site?.googleAnalytics}
     </body>

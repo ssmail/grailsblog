@@ -707,3 +707,9 @@ h4.commentTitle {
 .marginContent p {
     text-align: left;
 }
+
+/*  Google AdSense Top */
+.googleAdSenseTop {
+    text-align: center;
+    padding-top: 20px;
+}
