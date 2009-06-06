@@ -125,10 +125,19 @@
 
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="googleAdSense">Google Ad Sense:</label>
+                                    <label for="googleAdSenseTop">Google Ad Sense Top:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'googleAdSense', 'errors')}">
-                                    <textarea class="full" rows="5" name="googleAdSense">${fieldValue(bean: siteInstance, field: 'googleAdSense')}</textarea>
+                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'googleAdSenseTop', 'errors')}">
+                                    <textarea class="full" rows="5" name="googleAdSenseTop">${fieldValue(bean: siteInstance, field: 'googleAdSenseTop')}</textarea>
+                                </td>
+                            </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="googleAdSenseSide">Google Ad Sense Side:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: siteInstance, field: 'googleAdSenseSide', 'errors')}">
+                                    <textarea class="full" rows="5" name="googleAdSenseSide">${fieldValue(bean: siteInstance, field: 'googleAdSenseSide')}</textarea>
                                 </td>
                             </tr>
 

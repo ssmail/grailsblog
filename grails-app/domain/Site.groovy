@@ -9,7 +9,8 @@ class Site {
     String keyWords
     String siteUrl
     String feedDescription
-    String googleAdSense
+    String googleAdSenseTop
+    String googleAdSenseSide
     String googleAnalytics
     
     static constraints = {
@@ -22,7 +23,8 @@ class Site {
         keyWords(nullable: true, maxSize: 1000)
         siteUrl(maxSize: 150)
         feedDescription(maxSize: 1000)
-        googleAdSense(nullable: true, maxSize: 1000)
+        googleAdSenseTop(nullable: true, maxSize: 1000)
+        googleAdSenseSide(nullable: true, maxSize: 1000)
         googleAnalytics(nullable: true, maxSize: 1000)
     }
 

@@ -51,7 +51,8 @@ class BootStrap {
     }
 
     def createDefaultSite() {
-        Site site = new Site(title: "Grails Blog",
+        Site site = new Site(
+                title: "Grails Blog",
                 subtitle: "Subtitle",
                 tagLine: "Insert witty tagline here",
                 description: "Site description",

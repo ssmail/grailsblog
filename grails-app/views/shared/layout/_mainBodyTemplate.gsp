@@ -18,11 +18,14 @@
     </div>
 </div>
 <div id="logo-wrap">
-<div id="logo">
-    <% homeText = message(code: "home", args: []) %>
-	<h1><g:link controller="home" action="index" title="${homeText}">${site?.title}</g:link></h1>
-	<h2> ${site?.tagLine}</h2>
-</div>
+    <div id="logo">
+        <% homeText = message(code: "home", args: []) %>
+            <h1><g:link controller="home" action="index" title="${homeText}">${site?.title}</g:link></h1>
+            <h2> ${site?.tagLine}</h2>
+    </div>
+    <div class="${site?.googleAdSenseTop?.size() == null || site?.googleAdSenseTop == null  ? '' : 'googleAdSenseTop'}">
+      ${site?.googleAdSenseTop}
+    </div>
 </div>
 <!-- end header -->
 <!-- start page -->
@@ -44,7 +47,7 @@
 			    <g:render template="/shared/recentPostsTemplate"/>
 			</li>
 			<li>
-			    ${site?.googleAdSense}
+			    ${site?.googleAdSenseSide}
 			</li>
 		</ul>
 	</div>
@@ -56,7 +59,7 @@
 <div id="footer">
 	<div id="footer-wrap">
 	<p id="legal">&copy;<g:formatDate format="yyyy" date="${new Date()}"/> 
-	    &nbsp;<g:link url="http://code.google.com/p/grailsblog/"> ${site.title} v<g:meta name="app.version"/></g:link>. 
+	    &nbsp;<g:link url="http://code.google.com/p/grailsblog/"> ${site?.title} v<g:meta name="app.version"/></g:link>.
 	    &nbsp;Template from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
     </p>
 	</div>
