@@ -44,10 +44,10 @@
                               </li>
                         </g:if>
 			<li>
-			    <g:render template="/shared/recentPostsTemplate"/>
+			    ${site?.googleAdSenseSide}
 			</li>
 			<li>
-			    ${site?.googleAdSenseSide}
+			    <g:render template="/shared/recentPostsTemplate"/>
 			</li>
 		</ul>
 	</div>
