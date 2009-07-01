@@ -2,13 +2,10 @@ class Author extends Commenter {
 
     String about = ""
     String aboutMargin = ""
+    Boolean contactMe = false
     SortedSet posts = new TreeSet()
 
     static hasMany = [posts: Post]
-
-    static constraints = {
-        email(nullable: true)
-    }
 
     static mapping = {
         about type: "text"
