@@ -5,5 +5,8 @@ class RegisteredUser extends JsecUser {
 
     static hasMany = [roles: Role,
             permissions: Permission]
-
+            
+    static constraints = {
+        email(email: true, nullable: true)
+    }
 }
