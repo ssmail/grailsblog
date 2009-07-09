@@ -99,7 +99,7 @@ fckeditor {
         }
     }
     
-    skipBrowserCheck = true
+
 }
 
 uiperformance.enabled = true
