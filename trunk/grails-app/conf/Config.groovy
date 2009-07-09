@@ -98,6 +98,8 @@ fckeditor {
             denied = []
         }
     }
+    
+    skipBrowserCheck = true
 }
 
 uiperformance.enabled = true
