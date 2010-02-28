@@ -3,15 +3,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="admin"/>
         <title>Create Post</title>
-        <g:javascript>
-            document.observe("dom:loaded", function() {
-                $("mainBody").className = "hideboth";
-                $("postCreate").show();
-            });
-        </g:javascript>
     </head>
     <body>
-        <div id="postCreate" style="display: none">
+        <div id="postCreate">
             <div id="pop" class="nav">
                 <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home" default="Home"/></a></span>
                 <span class="menuButton">
