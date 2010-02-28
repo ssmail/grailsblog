@@ -27,7 +27,7 @@ class SetUp {
     }
 
     def initData() {
-        new BootStrap().init()
+        //new BootStrap().init()
     }
 
 }

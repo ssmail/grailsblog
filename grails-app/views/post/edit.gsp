@@ -6,12 +6,11 @@
         <g:javascript>
             document.observe("dom:loaded", function() {
                 $("mainBody").className = "hideboth";
-                $("postEdit").show();
             });
         </g:javascript>
     </head>
     <body>
-        <div id="postEdit" style="display: none">
+        <div id="postEdit">
             <div class="nav">
                 <span class="menuButton"><a class="home" href="${createLinkTo(dir: '')}"><g:message code="home" default="Home"/></a></span>
                 <span class="menuButton">
