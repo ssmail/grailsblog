@@ -62,7 +62,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="Grails User Library">
         <CLASSES>
           <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/lib" />
@@ -82,7 +82,7 @@
         <jarDirectory url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="grails-1.2.1" level="application" />
+    <orderEntry type="library" name="grails-1.2.1" level="application" />
   </component>
 </module>
 
