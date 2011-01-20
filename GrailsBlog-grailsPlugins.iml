@@ -4,12 +4,19 @@
     <facet type="web" name="GrailsWeb">
       <configuration>
         <webroots>
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/web-app" relative="/" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/web-app" relative="/" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/web-app" relative="/" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/web-app" relative="/" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/web-app" relative="/" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/plugins/fckeditor-0.8/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/plugins/ui-performance-1.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/plugins/feeds-1.4/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/plugins/searchable-0.5.4/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/plugins/modalbox-0.3/web-app" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -17,72 +24,175 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/grails-app/controllers" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/grails-app/services" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/grails-app/taglib" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/fckeditor-0.9.4/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/grails-app/taglib" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/grails-app/controllers" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/grails-app/taglib" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/hibernate-1.2.1">
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/hibernate-1.2.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/hibernate-1.2.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/hibernate-1.2.1/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/grails-app/services" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/grails-app/taglib" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4/grails-app/taglib" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/grails-app/services" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/grails-app/taglib" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/modalbox-0.4/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/grails-app/controllers" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/grails-app/services" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/recaptcha-0.4.5/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/src/groovy" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/grails-app/services" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/web-app/plugins" />
     </content>
-    <content url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2">
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/grails-app/taglib" isTestSource="false" />
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/src/groovy" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/.svn">
+      <excludeFolder url="file://$MODULE_DIR$/plugins/.svn/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/.svn/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/.svn/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/fckeditor-0.8">
+      <sourceFolder url="file://$MODULE_DIR$/plugins/fckeditor-0.8/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/fckeditor-0.8/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/fckeditor-0.8/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/fckeditor-0.8/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/fckeditor-0.8/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/fckeditor-0.8/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/feeds-1.4">
+      <sourceFolder url="file://$MODULE_DIR$/plugins/feeds-1.4/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/feeds-1.4/grails-app/taglib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/feeds-1.4/test/unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/feeds-1.4/test/integration" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/feeds-1.4/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/feeds-1.4/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/feeds-1.4/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/jsecurity-0.3">
+      <sourceFolder url="file://$MODULE_DIR$/plugins/jsecurity-0.3/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/jsecurity-0.3/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/jsecurity-0.3/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/jsecurity-0.3/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/jsecurity-0.3/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/jsecurity-0.3/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/jsecurity-0.3/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/modalbox-0.3">
+      <sourceFolder url="file://$MODULE_DIR$/plugins/modalbox-0.3/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/modalbox-0.3/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/modalbox-0.3/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/modalbox-0.3/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1">
+      <sourceFolder url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/searchable-0.5.4">
+      <sourceFolder url="file://$MODULE_DIR$/plugins/searchable-0.5.4/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/searchable-0.5.4/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/searchable-0.5.4/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/searchable-0.5.4/grails-app/services" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/searchable-0.5.4/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/searchable-0.5.4/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/searchable-0.5.4/web-app/plugins" />
+    </content>
+    <content url="file://$MODULE_DIR$/plugins/ui-performance-1.1">
+      <sourceFolder url="file://$MODULE_DIR$/plugins/ui-performance-1.1/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/ui-performance-1.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plugins/ui-performance-1.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/ui-performance-1.1/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/ui-performance-1.1/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/ui-performance-1.1/web-app/plugins" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="Grails User Library">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/lib" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/lib" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/lib" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/lib" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/lib" />
-          <root url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/lib" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/lib" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/lib" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/lib" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/lib" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/lib" />
+          <root url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/lib" />
+          <root url="file://$MODULE_DIR$/plugins/jsecurity-0.3/lib" />
+          <root url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1/lib" />
+          <root url="file://$MODULE_DIR$/plugins/ui-performance-1.1/lib" />
+          <root url="file://$MODULE_DIR$/plugins/feeds-1.4/lib" />
+          <root url="file://$MODULE_DIR$/plugins/searchable-0.5.4/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/feeds-1.5/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/jsecurity-0.4.1/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/mail-0.9/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/searchable-0.5.5/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/tomcat-1.2.1/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.2.1/projects/GrailsBlog/plugins/ui-performance-1.2.2/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/plugins/feeds-1.4/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/plugins/jsecurity-0.3/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/plugins/recaptcha-0.3.1/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/plugins/searchable-0.5.4/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/plugins/ui-performance-1.1/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="grails-1.2.1" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-1.2.1" level="project" />
   </component>
 </module>
 
